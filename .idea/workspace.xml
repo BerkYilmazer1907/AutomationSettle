@@ -14,7 +14,7 @@
     <session id="-2120110006">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.21" value="1" />
@@ -25,7 +25,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="feature" value="3911" />
+          <entry key="feature" value="3914" />
           <entry key="java" value="8035" />
           <entry key="txt" value="6" />
           <entry key="xml" value="65" />
@@ -33,7 +33,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Cucumber" value="3911" />
+          <entry key="Cucumber" value="3914" />
           <entry key="JAVA" value="8035" />
           <entry key="PLAIN_TEXT" value="6" />
           <entry key="XML" value="65" />
@@ -98,8 +98,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/feature/Conversion.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+            <state relative-caret-position="255">
+              <caret line="17" column="80" lean-forward="true" selection-start-line="17" selection-start-column="80" selection-end-line="17" selection-end-column="80" />
             </state>
           </provider>
         </entry>
@@ -179,6 +179,9 @@
       <dir>$PROJECT_DIR$</dir>
     </dirStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -218,11 +221,11 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="124" />
-    <option name="y" value="45" />
+    <option name="y" value="23" />
     <option name="width" value="2560" />
     <option name="height" value="1353" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -475,8 +478,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="124" y="46" width="2560" height="1353" extended-state="0" />
-    <editor active="true" />
+    <frame x="1" y="25" width="2560" height="1353" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49879518" visible="true" weight="0.16878475" />
       <window_info id="Structure" order="1" sideWeight="0.50120485" side_tool="true" weight="0.16640191" />
@@ -487,7 +489,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32956383" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32956383" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32956383" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39983845" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -800,8 +802,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/feature/Conversion.feature">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+        <state relative-caret-position="255">
+          <caret line="17" column="80" lean-forward="true" selection-start-line="17" selection-start-column="80" selection-end-line="17" selection-end-column="80" />
         </state>
       </provider>
     </entry>

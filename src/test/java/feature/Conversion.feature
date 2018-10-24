@@ -37,6 +37,7 @@ Feature: Conversion Yaratma - FMX
       | TestAutomationMnx@com.com | British Pound | Canadian Dollar      | Buy      |
       | TestAutomationMnx@com.com | Euro          | Canadian Dollar      | Sell     |
       | TestAutomationMnx@com.com | Euro          | Canadian Dollar      | Buy      |
+      | TestAutomationMnx@com.com | Euro          | United States Dollar | Buy      |
 
 
 
