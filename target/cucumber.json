@@ -1,0 +1,2754 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2383405582,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Login into account with correct details",
+        "description": "",
+        "id": "conversion-yaratma---fmx;login-into-account-with-correct-details;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 117452077,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDownAll(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4897410406,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User navigates to settlego website",
+            "match": {
+              "location": "LoginSteps.userNavigatesToNelevenWebsite()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2241697384,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"TestAutomation@com.com\" login olur",
+            "match": {
+              "arguments": [
+                {
+                  "val": "TestAutomation@com.com",
+                  "offset": 1
+                }
+              ],
+              "location": "LoginSteps.loginOlur(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 24199232101,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Satilacak currency \"British Pound\" ve alinacak currency \"Euro\" olan Amount to \"Sell\" secilen conversion islemi yapilir",
+            "match": {
+              "arguments": [
+                {
+                  "val": "British Pound",
+                  "offset": 20
+                },
+                {
+                  "val": "Euro",
+                  "offset": 57
+                },
+                {
+                  "val": "Sell",
+                  "offset": 79
+                }
+              ],
+              "location": "ConversionSteps.satilacak_currency_ve_alinacak_currency_olan_Amount_to_secilen_conversion_islemi_yapilir(String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 66003735,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Conversion islemi basarili olmali",
+            "match": {
+              "location": "ConversionSteps.conversion_islemi_basarili_olmali()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@halo20"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1569176041,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Login into account with correct details",
+        "description": "",
+        "id": "conversion-yaratma---fmx;login-into-account-with-correct-details;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 110756285,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDownAll(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4754806468,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User navigates to settlego website",
+            "match": {
+              "location": "LoginSteps.userNavigatesToNelevenWebsite()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1913148777,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"TestAutomation@com.com\" login olur",
+            "match": {
+              "arguments": [
+                {
+                  "val": "TestAutomation@com.com",
+                  "offset": 1
+                }
+              ],
+              "location": "LoginSteps.loginOlur(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 24433703685,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Satilacak currency \"Euro\" ve alinacak currency \"British Pound\" olan Amount to \"Buy\" secilen conversion islemi yapilir",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Euro",
+                  "offset": 20
+                },
+                {
+                  "val": "British Pound",
+                  "offset": 48
+                },
+                {
+                  "val": "Buy",
+                  "offset": 79
+                }
+              ],
+              "location": "ConversionSteps.satilacak_currency_ve_alinacak_currency_olan_Amount_to_secilen_conversion_islemi_yapilir(String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 71820241,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Conversion islemi basarili olmali",
+            "match": {
+              "location": "ConversionSteps.conversion_islemi_basarili_olmali()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@halo20"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1395895913,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Login into account with correct details",
+        "description": "",
+        "id": "conversion-yaratma---fmx;login-into-account-with-correct-details;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 45151666025,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDownAll(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3313510475,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User navigates to settlego website",
+            "match": {
+              "location": "LoginSteps.userNavigatesToNelevenWebsite()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 12016058010,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"TestAutomation@com.com\" login olur",
+            "match": {
+              "arguments": [
+                {
+                  "val": "TestAutomation@com.com",
+                  "offset": 1
+                }
+              ],
+              "location": "LoginSteps.loginOlur(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 28540797758,
+              "error_message": "org.openqa.selenium.WebDriverException: unknown error: Element \u003cinput type\u003d\"submit\" class\u003d\"btn-style reverted pull-right full-mobile\" value\u003d\"Get a Quote\" data-reactid\u003d\".0.3.0.0.1.0.1.0.0.6.1\"\u003e is not clickable at point (616, 753). Other element would receive the click: \u003cdiv class\u003d\"loader-overlay\" data-reactid\u003d\".0.4\" style\u003d\"display: block; opacity: 0.666873;\"\u003e...\u003c/div\u003e\n  (Session info: chrome\u003d69.0.3497.100)\n  (Driver info: chromedriver\u003d2.41.578706 (5f725d1b4f0a4acbf5259df887244095596231db),platform\u003dMac OS X 10.12.6 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 48 milliseconds\nBuild info: version: \u00273.4.0\u0027, revision: \u0027unknown\u0027, time: \u0027unknown\u0027\nSystem info: host: \u0027Berk-MacBook-Pro.local\u0027, ip: \u0027192.168.34.126\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.12.6\u0027, java.version: \u00271.8.0_101\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, hasTouchScreen\u003dfalse, platform\u003dMAC, acceptSslCerts\u003dfalse, goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:57688}, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.41.578706 (5f725d1b4f0a4acbf5259df887244095596231db), userDataDir\u003d/var/folders/cl/dp0_2m3s2rx99p5p_z0v_y280000gn/T/.org.chromium.Chromium.0c85wR}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d69.0.3497.100, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: c61cb8ce3a1d1dc611548a29147a758f\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)\n\tat pageobject.ConversionPage.ConversionPage(ConversionPage.java:29)\n\tat steps.ConversionSteps.satilacak_currency_ve_alinacak_currency_olan_Amount_to_secilen_conversion_islemi_yapilir(ConversionSteps.java:19)\n\tat ✽.And Satilacak currency \"Euro\" ve alinacak currency \"British Pound\" olan Amount to \"Sell\" secilen conversion islemi yapilir(Conversion.feature:9)\n",
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "Satilacak currency \"Euro\" ve alinacak currency \"British Pound\" olan Amount to \"Sell\" secilen conversion islemi yapilir",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Euro",
+                  "offset": 20
+                },
+                {
+                  "val": "British Pound",
+                  "offset": 48
+                },
+                {
+                  "val": "Sell",
+                  "offset": 79
+                }
+              ],
+              "location": "ConversionSteps.satilacak_currency_ve_alinacak_currency_olan_Amount_to_secilen_conversion_islemi_yapilir(String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "embeddings": [
+              {
+                "data": "iVBORw0KGgoAAAANSUhEUgAABgAAAATXCAYAAAAoSr7VAAAgAElEQVR4nOzdd2Bb1d0+8Efbkoc8ZXnvHSdx4uwdkkBYIYwSoBQoo9C3bxelpS1QVil0vbQv7a+DFkpfKJAQQgghkAUhhGw7w/GK995L1h6/P2TdWJZsy4kTB/F8/rKlq6tz79W9597zPed7RMsXvuAAERERERERERERERH5FfFUF4CIiIiIiIiIiIiIiCYfAwBERERERERERERERH6IAQAiIiIiIiIiIiIiIj/EAAARERERERERERERkR9iAICIiIiIiIiIiIiIyA8xAEBERERERERERERE5IcYACAiIiIiIiIiIiIi8kMMABARERERERERERER+SEGAIiIiIiIiIiIiIiI/BADAEREREREREREREREfogBACIiIiIiIiIiIiIiP8QAABERERERERERERGRH2IAgIiIiIiIiIiIiIjIDzEAQERERERERERERETkhxgAICIiIiIiIiIiIiLyQwwAEBERERERERERERH5IQYAiIiIiIiIiIiIiIj8EAMAREREREREREREUyQzSzvVRSAiP8YAABERERERERERERGRH5JOdQGI6NKRSsVITdMgJy8GubkxyM6NwY9/uBFtrf1TXTQiIiIiIiIi+goQi0WQy6WQyiSQSsQQS0QQiUQAAIfDAbvNAavNDqvFBrPZCrvdMcUlJvpyYwCA6CvkgW8vxy23Fgr/9/UZ2PhPRERERERERBedTC5BQIAMcvnozZEikQgSqQgSqRgKhRSBUMBstsJotMBitl3C0hL5DwYAiPxETIwaOXmxyM6Nwad7y1Fyqsljmdy8WLf/vS1DRERERERERDRZJBIxVIHyMRv+xyKXSyGXS2E2W6EfNMNms09yCYn8GwMARF9yhXOT8cRT1yM4JEB47d2NxzyWk0rFyMp2n1joTEnzRS8fEREREREREX01BQTIEBikmJR1uQIBgzoTjEbLpKyT6KuAAQCiy5hKJUdWthY5ebGQSsV47ZUDHsvMnZ/q1vjf12dAS0ufx3IZmdGQSt3n/S490zL5hSYiIqKvNLFYBIVCBoPBPNVFIZpUcrkE5gmkn5BKJbDb7ZOSu3oy10WTb6K/jS+rL+t28vyZOiqVHEqVfNLXGxikgFgsgl7Pew0iXzAAQHSZ+vPf70R2TgyG5sHBpreO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iIiIiIjoorDZ7BjoN0ImlyAgQDbhQIDZbHUGEsy2i1RCIv/GAAAREREREREREdEUqShvneoiXBIWsw0Wsw1isQhyuRRSmQRSiRhiiQgikQgA4HA4YLc5YLXZYbXYYDZbYbc7prjkRF9uDAAQERERERERERHRJWG3O2A0WgCjZaqLQvSVwEmAiYiIiIiIiIiIiIj8EAMARERERERERERERER+iAEAIiIiIiIiIiIiIiI/xAAAEREREREREREREZEfYgCAiIiIiIiIiIiIiMgPMQBAREREREREREREROSHGAAgIiIiIiIiIiIiIvJDDAAQEREREREREREREfkhBgCIiIiIiIiIiIiIiPyQyGgyOaa6EERERERERERERERENLmkDjb/ExERERERERERERH5HaYAIiIiIiIiIiIiIiLyQwwAEBERERERERERERH5IQYAiIiIiIiIiIiIiIj8EAMARERERERERERERER+iAEAIiIiIiIiIiIiIiI/xAAAEREREREREREREZEfYgCAiIiIiIiIiIiIiMgPMQBAREREREREREREROSHGAAgIiIiIiIiIiIiIvJDDAAQEREREREREREREfkhBgCIiIiIiIiIiIiIiPwQAwBERERERERERERERH6IAQAiIiIiIiIiIiIiIj/EAAARERERERERERERkR9iAICIiIiIiIiIiIiIyA8xAEBERERERERERERE5IcYACAiIiIiIiIiIiIi8kMMABARERERERERERER+SEGAIiIiIiIiIiIiIiI/BADAEREREREREREREREfogBACIiIiIiIiIiIiIiP8QAABERERERERERERGRH2IAgIiIiIiIiIiIiIjIDzEAQERERERERERERETkhxgAICIiIiIiIiIiIiLyQwwAEBERERERERERERH5IQYAiIiIiIiIiIiIiIj8EAMARERERERERERERER+iAEAIiIiIiIiIiIiIiI/xAAAEREREREREREREZEfYgCAiIiIiIiIiIiIiMgPMQBAREREREREREREROSHGAAgIiIiIiIiIiIiIvJDDAAQEREREREREREREfkhBgCIiIiIiIiIiIiIiPwQAwBERERERERERERERH6IAQAiIiIiIiIiIiIiIj/EAAARERERERERERERkR9iAICIiIiIiIiIiIiIyA8xAEBERERERERERERE5IcYACAiIiIiIiIiIiIi8kMMABARERERERERERER+SEGAIiIiIiIiIiIiIiI/BADAEREREREREREREREfogBACIiIiIiIiIiIiIiP8QAABERERERERERERGRH2IAgIiIiIiIiIiIiIjIDzEAQEQXncFgQEVFBWw221QXhYiIiIiIiIiI6CuDAQCiCejr60N1dTXa29vZmD0Bf3jxRfziicfx/vtbp7ooREREREREREREXxnSqS4A0eXO4XDgww+346MdH6G9vU14XSKRYMaMGbj55luQkpo6hSW8/E2fMR1dXV1IT8+Y6qIQERERERERERF9ZYgMRpNjqgtBdDl79dVX8NGOHZBIJMjIyEBubh7MZjPOnq1EWVkZAODee+/DqtWrp7ikREREREREREREROdwBADRGDZt2oiPduxAcnIyHnv8CQQGBrq9f+rUSbzw/PP45z//gfDwcMyaPXvUdRkMBgQEBEAkEvn8/Xa7Hf39fQgNDTvvbRiL0WiEXC6HWOx7NjCz2QypVOr2GZvNhsHBQQQHB09o+0auVyKRQCKRTOhzAwMDUCgUkMvl467farFANeIYEhERERERERER+SsGAIhGUVJyGu9s2gSNRoOfPPpTj8Z/AMjPn45v3HUXXvnnP/HWW296BACampqwY8eHKCstRVNTE4KCgpCVnY158+Zj8eLFbsu++Z//YNu29/HjnzyKsNBQbNnyLk6cOIHBwUGoAgNx9dqrccP69UID+ZYt72LTxo24dcMGXHfd9R5l6+/vx39/578QFhaG/3nxD0LDfH9/P97bsgWlZaWoq62FQqFAVnY2Zs+a7TGK4YknHkd1VRVeefVfOHL4MHbt2onKykq89Kc/Q61Wo7GxEa/96184c6YENpsNCoUCc+bMwW23347w8Aiv2zZ9+nThdYPBgPe2bMGZ0jOorqoSRlnk5U3D9evWuQUDTCYT7v3mPUjPyMCTTz6FrVvfw8GDB1FbUwMASE9Px333P4DExES3bTh+7Bj+85830NTUBIfDgeDgYKxZcyWuX7du3KABERERERERERHRl5nksccef3KqC0F0Odq0cSPq6+twx9e/jpycnFGXS0tLhzpEjYjISMTHJ0ChUAAAGhsb8cwzT6O8rAxarRbz5s+HSqVCaWkpPt+/Hwq5AllZWcJ6Tp48ibKyMhQWFuLVV19BbGwc5i9YgISE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B0j+PwbP1yQgAAAAWqdHjx6SpH379snr9TZZpqioSImJifrggw+0fPlyhYSE6LrrrtPo0aPPZqgAOggJAABBnE6n3G53o+2PP/64brjhBu3fv18bNmxQRUWFBgwYoOnTpyssLEx/+9vftGvXLlmWpccee0z9+vXT9ddfL0navXu3Vq9erf379ys+Pl79+/fX+PHjA70NHn/8cV1//fXKzs7Wli1b9L3vfS+oh2pRUZFM09SQIUPkdDoVHx+vO+64Q4WFhYEyHo9HCxYs0J49e1RZWalevXpp3Lhx6tq1a5vvgc/n06JFi7R7924dO3ZMPXr00NixY5Weni5Jys/P1+uvv657771XH3/8sYqLi/WTn/yk0XkcDodCQkIkSWlpabrsssv04osvqrq6WmVlZXr55Zf1s5/9LGgUw/r167V27VrdfffdevrppzVixIigXr7V1dV66qmndM0116h///5Nxr9+/XqNGDFCubm52rhxo8aNGxfYt2rVKu3atUuTJk3SggULlJ+fr549e2rq1KlKTk7WJ598os2bN6uurk4XXnihrrzyykDv4Zbuy9q1a7Vx40bdfffdQfG88847Cg8P19SpUwP37qc//ak+/vhj7dq1Sw6HQxdddJHGjRsnwzA0e/ZsVVRUaNGiRVq+fLmmTJmiESNGNLrOgwcPasmSJdq3b59SUlI0cuRIhYSEaMGCBbr//vtbVVf9Pf3oo4+UlZWl8PBwDRw4UKNGjWr2+WgpviVLljT5GWn4HmzevFmFhYVKS0vTyJEjdcEFFzRbX/3nJycnR2FhYRoyZIgmTpwol8vVpnt+8vM6d+5cJScnKz4+XitXrtSYMWM0fPhwlZaW6tNPP1V2drZCQkLUu3fvoNE29cclJyfrs88+08GDB5WWlqbrrrtOSUlJrYr7rbfeksfj0S233BIU9yuvvKKuXbvqiiuuCGxbu3atVqxYofvuuy/wLEoKxFh/7fv27dPnn3+u3NxcRUdHKyMjQ5MnTw4c8+STT2rq1KlBn5vi4mK9+OKL+ulPf6qoqKjA9sLCQr3yyiu67777Ate9ceNGffzxx/re974XSP7k5ubq7bff1v333y/DMNo1hnpNPeet7alV/94/8MADjX6vFxQU6PXXX9e0adMCI1na+mxu3rxZX3zxhQoLC5Wenq5LL71UW7duVVVVlW644YZWxQic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xu1ac97XnwdXr17F8ePHcf78eUilUsyfP984TwNQNx/G9evXcfToUQwYMACOjo4YOHAgkpOTER0djdjYWJSXl2PevHkNzhMionpqtQZCobBVRVlz6A7fcwCguroaMpnMZC4eIiKirqampgYSiaTdT7U/6Dr7ew5RdyeoUdW2rccFETWqvve9vZ2tpUMxi7v763/++ecYMWIERo0aZVyv1+uh0Wga7bt+N41G06ZJhOvpdDoIBII2/YHe3rE6Qnvib0xMTAySkpKwdOlSAE3Pe2COeJo7dnvHbev+5vgZtjfW+rkIamtrsXHjRvTr1w8zZsww+dLZ2vNer9fDYDA0+4RGYwwGA7RabZc5j4mo61JUVUMkEnVaIru7fM8pKiqCq6trm38/ExERdabS0lLIZLJmn2juzjr7ew5Rd8criYga1VICVSgUtpgEBZqfhLU57fmffVdKmnbUl5X2JuFbE09zx77fO09au785fobtjVUoFEIqlcLe3h4vvfQSsrOzcfTo0QbbtOa8FwqF7UouCQSCLnUeExEREREREdGDrWc+S0RERNQMBwcHLFu2zNJhEBERERERERHdFz4BQEQtCg0NbdCbnjqHh4cHgoODLR0GERERERERdWExMTE4dOhQi9vpdDp89NFHSElJ6YSoiKgr4BMARNSixx57zNIh9FihoaEIDQ21dBhERERERETUBV24cAHXr19HQkICpk6d2uL2hw4dQkVFBXQ6XSdER0RdAQsAREREREREREREDyB3d3fIZDLo9foWt83OzkZVVRX8/f07ITIi6irYAoiIiIiIiIiIiOgB5O/vj7CwMLi7uze7nUajwb59+zB79uxOioyIugoWAIiIiIiIiIiIiLqxAwcOYOzYsZDJZJYOhYg6GVsAERERERFRj1BZWQmJRAKhkPdBERFR15WXlwdHR0c4OTk1u521tTWsra1bPF5WVhYyMzMxfvx4lJSUQK1WQ6FQQKVStWp/InqwsQBAREREREQ9gkQigUQigUgksnQoRERETbK1tYVUKoVUKjXL8YqKilBSUoJPPvkEAFBVVYXc3Fzo9XqMGjXKLGMQUdfFAgAREREREfUINjY2kMlkLAAQEVGX1qtXL8hksvu+Oz8+Ph4hISEYMWIERowYYVz+7bff4pFHHkFYWNj9hkpEDwA++0pERERERERERNSNGAwGbNmyBTk5OZYOhYgsTFCjqjVYOgii7kCv10On08HeztbSoRAREVE3p6iqhkgk6rRe9t3le05RURFcXV35BAAREXVppaWlZnkC4EHV2d9ziLo7XklERERERERERERERN0QCwBERERERERERERERN0QCwBERERERERERERERN0QCwBERERERERERERERN0QCwBERERERERERERERN0QCwBERERERERERERERN0QCwBERERERERERERERN0QCwBERERERERERERERN0QCwBE1EBNTQ0MBkOb9ysqKsK+fftQWFgIAPjtt99w8uRJc4dHRERERERERERErSC2dABE1HVcuXIF3333HQoLC+Ho6Ihhw4Zh7ty58PT0bNX+BQUF2Lp1K7y9veHp6YnDhw9Do9Fg4sSJHRw5Uc+l0Wjw9NNPG18LBAL06dMHw4YNw6xZsyCTySwYHRERERERERFZEgsARAQAqKysxAcffICAgACsXbsWpaWl2LhxI+RyOVavXm3p8IioBZGRkZg2bRpqa2tx+fJl7Nq1CxKJBPPmzbN0aERERERERERkISwAEBEAICMjAzqdDmPHjkVYWBgAwNHREdnZ2VAqlca7iPft24dz584hPz8fQUFBmDx5MsaMGWPJ0IkIgLu7Ox5++GEAwIgRI3DlyhWcPXsW8+bNw5EjR7B7926sX78erq6uxn3Wrl0LtVqN9957D6+//jrc3NywatUq4/qKigq88cYbGDJkCF555ZVOf09EREREREREdH84BwARAQD69u0LgUCA48ePIz8/HwAwaNAgzJw505j837x5M7Zt2wYPDw8sWbIEtra2+PzzzxETE2PJ0InoHiUlJSgpKTEW82pqalBWVgadTmeynUKhQEVFBSQSCcLDw3H58mVkZ2cb158+fRolJSWIjIzs1PiJiIiIiIiIyDxYACAiAHV3+7/yyisoKirCa6+9hpUrV+LMmTPQ6/UA6hKFUVFRmDRpEl5//XVMmjQJy5cvR1hYGPbs2WPh6IkoPj4e7777LpYvX46//vWvGDduHJ599tlW7//4448DAI4fP25cFhMTAzc3NwwZMsTs8RIRERERERFRx2MLICIymjx5MiIjI3Hy5EkcP34cn332GWJjY/HOO+8gNTUVAGBra4vffvvNuI+VlRXy8/OhUCgsFTYRAfDw8EBkZCQ0Gg3s7Oxw4cIFDB8+HBEREa3a39vbG4MGDcJvv/2GxYsX49atW8jMzMSzzz4LgUDQwdETERERERERUUfgEwBEZMLe3h6zZs3Cl19+iXHjxiExMREpKSnQaDQAAL1eD41GY/w3YsQILF26FFZWVhaOnKhnCwwMxIwZMzBnzhysWrUKPj4+2Lx5MwBAKKz7371arTbZ597C3eOPP47q6mrExcUhJiYGIpEIkydP7pw3QERERERERERmxwIAEQEACgsLsXz5ckRFRQEABAIBhg0bZlzXv39/47aTJ0/G5MmTMWnSJCQlJeHKlSuQSCQWiZuIGmdjY4OCggIolUr06tULAHD58mXj+vz8fBQWFprsExERATc3Nxw7dgynTp1CREQEnJ2dOzVuIiIiIiIiIjIftgAiIgCAp6cn1Go1du7cCYFAAG9vb0RFRUEkEuGhhx6Cs7MzxowZg19//RVCoRChoaGIi4tDbGws5s+fzxYhRBZWUFCAc+fOQaPR4I8//kBiYiICAwMhk8kQFhYGqVSKvXv3QqPRwMHBAbGxsXBzczM5hlAoxLRp0/Cf//wHADBt2jRLvBUiIiIiIiIiMhMWAIjI6IMPPsB3332HXbt2QalUwtvbGytWrICXlxcA4B//+Ae+//57nD59Gnv37oW7uzsWL16M2bNnWzhyIkpMTERiYiIAICAgAHPnzsXUqVMBAC4uLnj99dfx3Xff4ccff4Svry8WL16MXbt2QaVSmRxnypQp2LZtG9zc3BAeHt7p74OIiIiIiIiIzEdQo6o1WDoIou5Ar9dDp9PB3s7W0qGYRW1tbbN9/VUqFaytrTsxIiIyB6VSCZlM1uT69PR0rFixAosWLcKcOXM6MTIiagtFVTVEIpFxjo+O1l2+5xQVFcHV1RUikcjSoRARETWptLQUMpmsx/7N3dnfc4i6O15JRNSolib17alfRIgedM0l/wHg4MGDEIlEmDhxYidFREREREREREQdhQUAIiIiAgCUlZUhLi4OkZGRcHJysnQ4RERERERERHSfWAAgIiIiAEBmZiYiIyMxa9YsS4dCRERERERERGbASYCJiIgIADB06FAMHTrU0mEQERERERERkZmwAEBERERERERERPQAi4mJgVKpxBNPPNHo+sLCQuzevRsFBQVwc3PD3LlzERAQ0MlREpElsAUQERERERERERHRA+jChQvYvHkzdu/eDY1G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7t1dEWqN0bZtW61YsUKFhYUymUySpI0bN8rPz0/h4eFyd3dXRESENm7cqFatWkm69Ay3bNmiu+66S5LUunVrFRUVac+ePbr55pslSWfOnFFaWpqio6Nd0zEAAAAAAOoxEgAAbgi73S6DwSBJ8vf313PPPaedO3dq48aN6tevn5o0aSJPT0+98cYbV70X+LX8/PyumAT45eB/r169nDa/rY969eqlDz74QFOmTNHw4cOVkZGhBQsWaODAgY5nM2TIEC1YsEBeXl6KiorSihUrlJ2drf79+0uSQkND1a1bN02fPl2jR4+Wp6enFi9erMjISLVp08aV3QMAAAAAoF6q3+sdALghCgoKdMcdd+i7775zOu/r66vCwkJJUnR0tHbs2FFuuZBp06bpgQcekM1mq7Z4UXeVJQG8vb115MgR7dq1SxaLhcH//zVv3jw9/fTTkiQvLy+99dZbunjxoiZPnqzPP/9cvXv3VmJioqP8vffeq2HDhmnp0qV6+eWXderUKSUlJSkkJMRR5qWXXlLz5s01c+ZMvf322/L3968w0QcAAAAAAG68+jniAeCG8vPzU3x8vP7nf/5HTZs2VevWrbV27VodOnRId955pyTptttu07/+9S9NmTJF9913n5o3b66UlBQlJyfr0UcfrffrseP6+eVMgNOnT6u4uLjeDv737dtXycnJki699b9161bHtcjISP3jH/+44iwcg8GgcePGady4cVcsYzKZNHHiREnM5gEAAAAAwNXq16gHgGozfvx4ffTRR0pKSlJWVpYaNmyohx56yJEA8PPz09///nfNmDFDSUlJysvLU3h4uJ599lkNHTrUxdGjrrk8CVCfB/9/KT8/X6NHjy53vjKD9terDAAAAAAAuHEMRcUldlcHAdQFNptNVqtVDfx8XR3Kr3LgwIEbtknn5ZuKVsRut6ukpETe3t43pH2gTGFhoc6cOaPIyMjrOvh/Iz8/13L06FFFRUW5pG2gtqvNn5/8gosyGo3VNmOutn/PKXP27FmFhobKaDS6OhQAAK4oOztbJpOp3v4fubq/5wB1Xf1+9RFAtbja4L906S3h+vrFBtXLZDKpVatWrg4DAAAAAK6LzMxMLVy4UKdOnVJwcLBGjRp11RccrFarpk2bphEjRrjsJSYA1YtUGgAAAAAAAFALzZo1S7GxsZo6daqGDh2qmTNnqri4+Irlv/vuO+Xm5spqtVZjlABciQQAAAAAAAAAUMtkZWXp/PnzuvXWW+Xm5qaYmBiFhITo0KFDFZY/fvy4CgoK1Lx582qOFIArkQAAAAAAAAAAapnc3FwFBATIYDA4zgUFBSk3N7dcWbPZrG+++UYjRoyozhAB1AAkAAAAAAAAAIBaxmq1ltvY3s3NrcLlfb799lv17dv3mnv0Aah72AQYAAAAQL2Ql5cnDw8PubnxHhQAoOZKS0tTQECAAgMDr1rObrfLbDY7nTObzXJ3dx7uO3bsmI4ePapbb71VWVlZKi0tVX5+voqLi+Xt7X3d4wdQs5AAAAAAAFAveHh4yMPDo9zbkgAA1CS+vr7y9PSUp6fnVcsFBAQoJyfHaSZAZmamgoKCnMqdPXtWWVlZmjZtmiSpoKBAJ0+elM1mU69evW5MJwDUGCQAAAAAANQLPj4+MplMJAAAADVacHCwTCbTNd/ON5lMatiwodatW6e+ffvq8OHDyszMVFRUlCRp/fr1atu2rXr06KEePXo47vvwww/Vp08fxcbG3tB+AKgZSAAAAAAAAAAAtdDYsWM1Z84cJScnKy8vT2PGjJG3t7fsdrvmzZunxMREhYSEuDpMAC5EAgAAAAAAAACohVq3bq2kpCQVFBTI19fXsc+NwWDQ7NmzK7zniSeeqM4QAbgYCQAAAAAAAACgljIYDGrQoIGrwwBQQ7m5OgAAAAAAAAAAAHD9kQAAAAAAAAAAAKAOIgEAAAAAAAAAAEAdRAIAAAAAAAAAAIA6iAQAAAAAAAAAAAB1EAkAAJIko9Go4uJiV4cB1DrFxcUyGo0ua99oNKqkpMRl7QO1VUlJiUs/uwAAAABQHdxdHQCAmiEsLExpaWmyWq2uDgWoVYxGo8LCwlzWfnBwsDIyMvjsAlVkNBoVHBzs6jAAAAAA4IYiAQBAkhQQEKCAgABXhwGgiho0aKAGDRq4OgwAAAAAAFADsQQQAAAAAAAAAAB1EAkAAAAAAAAAAADqIBIAAAAAAAAAAADUQSQAAAAAAAAAAACog0gAAAAAAAAAAABQB5EAAAAAAAAAAACgDiIBAAAAAAAAAABAHUQCAAAAAAAAAACAOogEAAAAAAAAAAAAdRAJAAAAAAAAAAAA6iASAAAAAAAAAAAA1EEkAAAAAAAAAAAAqINIAAAAAAAAAAAAUAeRAAAAAAAAAAAAoA4iAQAAAAAAAAAAQB3k7uoAAAAAAAAAAFRdZmamFi5cqFOnTik4OFijRo1SVFRUuXLp6elavHixzpw5o4YNG+qee+5RZGSkCyIGUN2YAQAAAAAAAADUQrNmzVJsbKymTp2qoUOHaubMmSouLnYqYzabNX36dPXr109vvPGGBg4cqPfee08Wi8VFUQOoTiQAAAAAAAAAgFomKytL58+f16233io3NzfFxMQoJCREhw4dciqXmZkpPz8/dezYUQaDQR06dJDFYtGFCxdcFDmA6kQCAAAAAAAAAKhlcnNzFRAQIIPB4DgXFBSk3Nxcp3JNmjTRyy+/7Dg+fPiwPDw8FBwcXG2xAnAdEgAAAAAAAABALWO1WmU0Gp3Oubm5yWq1XvGeo0ePavbs2Ro9erTc3BgWBOoDNgEGAAAAUC9kZWXJbreXGywBAKAmOXHihAIDAxUQEHDVcna7XWaz2emc2WyWu3vFw30rVqzQDz/8oN///vfq0KHDdYsXQM1GAgAAAABAveDv76/AwEASAACAGq20tFQ+Pj5q0KDBVcsZDAbl5OQ4zQTIzMxUUFBQubLffvutDh48qJdffln+/v43JG4ANRMJAADlFBUVydvb22kdwco4e/as1q9frx49eqhJkyY3KLrKS05Olo+Pj+Lj410dSoXOnj2rr7/+WqdPn9bLL78sHx8fV4dUrb788kv98MMPev3119WwYUNXhwMAqAc8PDzk4eFBAgAAUKP5+PjIZDLJw8PjquVCQ0PVsGFDrVu3Tn379tXhw4eVmZmpqKgoSdL69evVtm1bubm56aefftJrr70mb2/v6ugCgBqEBAAAh127dmn27NlKT09XQECAunbtqnvuuafSg/lnzpzR/PnzFR4efl0TANOmTVOjRo304IMPVum+JUuWKDQ0tEoJgG3btmnp0qVKTExUREREVUOtNKvVqldffVU5OTlq3759vRyICAoKUuPGjeXl5eXqUAAAAACgVho7dqzmzJmj5ORk5eXlacyYMfL29pbdbte8efOUmJgos9mswsJCvfLKK073Tpw48ZqzDADUfiQAAEiS8vLy9NprrykyMlKvv/66srOz9dFHHykzM1OvvvqqS2M7ePCgioqKqqWt7Oxs7d27V4WFhTe0nVOnTikjI0N33323fv/739/QtmqqgQMHauDAga4OAwAAAABqrdatWysp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zZqlVatWKSsrS1JviHXgwAFNnz5dX/jCFzRjxgxt2LBBhYWFw57rkdzjfU9jREZG6uGHH9bixYtVXFys1157zTd8lsPhkMvlP45633EPNmeF2+3W2rVrVVpaqjlz5mj58uXq6enRvn375HA4fJNBj+S6OJ1O1dfX680331RoaKjv3hjuvPR9v9bW1mrp0qV68sknFR0drRdffFENDQ1+9RqGobi4OJ05c8b3XlFRkXp6evTBBx/43qutrZXT6VR8fLzf9V2yZIkyMjKUnJysVatW+Q0x1tjYqOLiYt1+++2677771NXVpVdffXXQ8+ZwOPTCCy/I4XDo7rvv1j333KOOjg49//zzvvk/Ojs71d3dPWDd9vZ23zUa6pyNVJdH+sKRHm2s8+jWOIu+lWNVdadXTx526lRb733ucHl1vturvzvao3fOeZQU1Ltus1Mqa/fqqRMuzYowtCTWol0NHn39WI++d8Kl0w6vPp1qUaitN0R4qbr3XjjV5tUPTrp0a5xF/zHNplNtXn39eI883oH1vdvg0ReP9qiy06vPpFk0I9yiP1W69T+O9sjpkWZHGpoR3vuj5X1JFt2VwI+ZAAAAADDeGAIIwFWze/duHT16VE6nUzU1Nbrrrrt8vWHnzZunTZs26Y477lBgYKC6urp0+vRpPfDAAwO2U1VVpTNnzujv//7vfb2pMzIy9Kc//Un79+/Xrbfeetk68vLyNHv2bC1btkySlJqaqvDwcG3cuFE33HCDb7mmpia99tpruvPOO5WTkzPk9rq6unx1JiYmqq2tTQUFBbrnnnvU09Oj/fv3a9myZbrpppskSenp6YqOjtaJEycG3V5fD/V77rlHM2fOlCSlpKQoODhY69ev18KFC31PMlxu38Oprq5WTEyMgoKCfO8dPnzYbxmr1ao5c+bo6NGjslgsuv/++32fPfzww3r66adVVlamKVOmKDY2VoZhKC0tbdD9Xcm5qKqqUmxsrF+N/aWkpCgvL089PT3DHm/fMRcXF+trX/uaIiMjJfVef6fTqby8PKWnp2vixImy2WyKioryHYvb7dbu3bt17733+q5JdHS0Ojs7tXfvXk2fPn3YfQ93j+fl5WnatGlavny5b53U1FT96le/UnV19ZDn9XIqKipUVVWlz33uc0pJSZHUe8537NjhW2Y016W1tVWPPfaY7/thJOelqqpK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hAgAAAAAAAAAAAAwIQIAAAAAAAAAAABMiAAAAAAAAAAAAAATIgDA/2vPDmQAAAAABvlb3+MrjQAAAAAAGBIAAAAAAAAwJAAAAAAAAGBIAAAAAAAAwJAAAAAAAACAIQEAAAAAAABDAgAAAAAAAIYEAAAAAAAADAkAAAAAAAAYEgAAAAAAADAkAAAAAAAAYEgAAAAAAADAkAAAAAAAAIAhAQAAAAAAAEMCAAAAAAAAhgQAAAAAAAAMCQAAAAAAABgSAAAAAAAAMCQAAAAAAABgSAAAAAAAAMCQAAAAAAAAgCEBAAAAAAAAQwIAAAAAAACGBAAAAAAAAAwJAAAAAAAAGBIAAAAAAAAwJAAAAAAAAGBIAAAAAAAAwJAAAAAAAACAIQEAAAAAAABDAgAAAAAAAIYEAAAAAAAADAkAAAAAAAAYEgAAAAAAADAkAAAAAAAAYEgAAAAAAADAkAAAAAAAAIAhAQAAAAAAAEMCAAAAAAAAhgQAAAAAAAAMCQAAAAAAABgSAAAAAAAAMCQAAAAAAABgSAAAAAAAAMCQAAAAAAAAgCEBAAAAAAAAQwIAAAAAAACGBAAAAAAAAAwJAAAAAAAAGBIAAAAAAAAwJAAAAAAAAGBIAAAAAAAAwJAAAAAAAACAIQEAAAAAAABDAgAAAAAAAIYEAAAAAAAADAkAAAAAAAAYEgAAAAAAADAkAAAAAAAAYEgAAAAAAADAkAAAAAAAAIAhAQAAAAAAAEMCAAAAAAAAhgQAAAAAAAAMCQAAAAAAABgSAAAAAAAAMCQAAAAAAABgSAAAAAAAAMCQAAAAAAAAgCEBAAAAAAAAQwIAAAAAAACGBAAAAAAAAAwJAAAAAAAAGBIAAAAAAAAwJAAAAAAAAGBIAAAAAAAAwJAAAAAAAACAIQEAAAAAAABDAgAAAAAAAIYEAAAAAAAADAkAAAAAAAAYEgAAAAAAADAkAAAAAAAAYEgAAAAAAADAkAAAAAAAAIAhAQAAAAAAAEMCAAAAAAAAhgQAAAAAAAAMCQAAAAAAABgSAAAAAAAAMCQAAAAAAABgSAAAAAAAAMCQAAAAAAAAgCEBAAAAAAAAQwIAAAAAAACGBAAAAAAAAAwJAAAAAAAAGBIAAAAAAAAwJAAAAAAAAGBIAAAAAAAAwJAAAAAAAACAIQEAAAAAAABDAgAAAAAAAIYEAAAAAAAADAkAAAAAAAAYEgAAAAAAADAkAAAAAAAAYEgAAAAAAADAkAAAAAAAAIAhAQAAAAAAAEMCAAAAAAAAhgQAAAAAAAAMCQAAAAAAABgSAAAAAAAAMCQAAAAAAABgSAAAAAAAAMCQAAAAAAAAgCEBAAAAAAAAQwIAAAAAAACGBAAAAAAAAAwJAAAAAAAAGBIAAAAAAAAwJAAAAAAAAGBIAAAAAAAAwJAAAAAAAACAIQEAAAAAAABDAgAAAAAAAIYEAAAAAAAADAkAAAAAAAAYEgAAAAAAADAkAAAAAAAAYEgAAAAAAADAkAAAAAAAAIAhAQAAAAAAAEMCAAAAAAAAhgQAAAAAAAAMCQAAAAAAABgSAAAAAAAAMCQAAAAAAABgSAAAAAAAAMCQAAAAAAAAgCEBAAAAAAAAQwIAAAAAAACGBAAAAAAAAAwJAAAAAAAAGBIAAAAAAAAwJAAAAAAAAGBIAAAAAAAAwJAAAAAAAACAIQEAAAAAAABDAgAAAAAAAIYEAAAAAAAADAkAAAAAAAAYEgAAAAAAADAkAAAAAAAAYEgAAAAAAADAkAAAAAAAAIAhAQAAAAAAAEMCAAAAAAAAhgQAAAAAAAAMCQAAAAAAABgSAAAAAAAAMCQAAAAAAABgSAAAAAAAAMCQAAAAAAAAgCEBAAAAAAAAQwIAAAAAAACGBAAAAAAAAAwJAAAAAAAAGBIAAAAAAAAwJAAAAAAAAGBIAAAAAAAAwJAAAAAAAACAIQEAAAAAAABDAgAAAAAAAIYEAAAAAAAADAkAAAAAAAAYEgAAAAAAADAkAAAAAAAAYEgAAAAAAADAkAAAAAAAAIAhAQAAAAAAAEMCAAAAAAAAhgQAAAAAAAAMCQAAAAAAABgSAAAAAAAAMCQAAAAAAABgSAAAAAAAAMCQAAAAAAAAgCEBAAAAAAAAQwIAAAAAAACGBAAAAAAAAAwJAAAAAAAAGBIAAAAAAAAwJAAAAAAAAGBIAAAAAAAAwJAAAAAAAACAIQEAAAAAAABDAgAAAAAAAIYEAAAAAAAADAkAAAAAAAAYEgAAAAAAADAkAAAAAAAAYEgAAAAAAADAkAAAAAAAAIAhAQAAAAAAAEMCAAAAAAAAhgQAAAAAAAAMCQAAAAAAABgSAAAAAAAAMCQAAAAAAABgSAAAAAAAAMCQAAAAAAAAgCEBAAAAAAAAQwIAAAAAAACGBAAAAAAAAAwJAAAAAAAAGBIAAAAAAAAwJAAAAAAAAGBIAAAAAAAAwJAAAAAAAACAIQEAAAAAAABDAgAAAAAAAIYEAAAAAAAADAkAAAAAAAAYEgAAAAAAADAkAAAAAAAAYEgAAAAAAADAkAAAAAAAAIAhAQAAAAAAAEMCAAAAAAAAhgQAAAAAAAAMCQAAAAAAABgSAAAAAAAAMCQAAAAAAABgSAAAAAAAAMCQAAAAAAAAgCEBAAAAAAAAQwIAAAAAAACGBAAAAAAAAAwJAAAAAAAAGBIAAAAAAAAwJAAAAAAAAGBIAAAAAAAAwJAAAAAAAACAIQEAAAAAAABDAgAAAAAAAIYEAAAAAAAADAkAAAAAAAAYEgAAAAAAADAkAAAAAAAAYEgAAAAAAADAkAAAAAAAAIAhAQAAAAAAAEMCAAAAAAAAhgQAAAAAAAAMCQAAAAAAABgSAAAAAAAAMCQAAAAAAABgSAAAAAAAAMCQAAAAAAAAgCEBAAAAAAAAQwIAAAAAAACGBAAAAAAAAAwJAAAAAAAAGBIAAAAAAAAwJAAAAAAAAGBIAAAAAAAAwJAAAAAAAACAIQEAAAAAAABDAgAAAAAAAIYEAAAAAAAADAkAAAAAAAAYEgAAAAAAADAkAAAAAAAAYEgAAAAAAADAkAAAAAAAAIAhAQAAAAAAAEMCAAAAAAAAhgQAAAAAAAAMCQAAAAAAABgSAAAAAAAAMCQAAAAAAABgSAAAAAAAAMCQAAAAAAAAgCEBAAAAAAAAQwIAAAAAAACGBAAAAAAAAAwJAAAAAAAAGBIAAAAAAAAwJAAAAAAAAGBIAAAAAAAAwJAAAAAAAACAIQEAAAAAAABDAgAAAAAAAIYEAAAAAAAADAkAAAAAAAAYEgAAAAAAADAkAAAAAAAAYEgAAAAAAADAkAAAAAAAAIAhAQAAAAAAAEMCAAAAAAAAhgQAAAAAAAAMCQAAAAAAABgSAAAAAAAAMCQAAAAAAABgSAAAAAAAAMCQAAAAAAAAgCEBAAAAAAAAQwIAAAAAAACGBAAAAAAAAAwJAAAAAAAAGBIAAAAAAAAwJAAAAAAAAGBIAAAAAAAAwJAAAAAAAACAIQEAAAAAAABDAgAAAAAAAIYEAAAAAAAADAkAAAAAAAAYEgAAAAAAADAkAAAAAAAAYEgAAAAAAADAkAAAAAAAAIAhAQAAAAAAAEMCAAAAAAAAhgQAAAAAAAAMCQAAAAAAABgSAAAAAAAAMCQAAAAAAABgSAAAAAAAAMCQAAAAAAAAgCEBAAAAAAAAQwIAAAAAAACGBAAAAAAAAAwJAAAAAAAAGBIAAAAAAAAwJAAAAAAAAGBIAAAAAAAAwJAAAAAAAACAIQEAAAAAAABDAgAAAAAAAIYEAAAAAAAADAkAAAAAAAAYEgAAAAAAADAkAAAAAAAAYEgAAAAAAADAkAAAAAAAAIAhAQAAAAAAAEMCAAAAAAAAhgQAAAAAAAAMCQAAAAAAABgSAAAAAAAAMCQAAAAAAABgSAAAAAAAAMCQAAAAAAAAgCEBAAAAAAAAQwIAAAAAAACGBAAAAAAAAAwJAAAAAAAAGBIAAAAAAAAwJAAAAAAAAGBIAAAAAAAAwJAAAAAAAACAIQEAAAAAAABDAgAAAAAAAIYEAAAAAAAADAkAAAAAAAAYEgAAAAAAADAkAAAAAAAAYEgAAAAAAADAkAAAAAAAAIAhAQAAAAAAAEMCAAAAAAAAhgQAAAAAAAAMCQAAAAAAABgSAAAAAAAAMCQAAAAAAABgSAAAAAAAAMCQAAAAAAAAgCEBAAAAAAAAQwIAAAAAAACGBAAAAAAAAAwJAAAAAAAAGBIAAAAAAAAwJAAAAAAAAGBIAAAAAAAAwJAAAAAAAACAIQEAAAAAAABDAgAAAAAAAIYEAAAAAAAADAkAAAAAAAAYEgAAAAAAADAkAAAAAAAAYEgAAAAAAADAkAAAAAAAAIAhAQAAAAAAAEMCAAAAAAAAhgQAAAAAAAAMCQAAAAAAABgSAAAAAAAAMCQAAAAAAABgSAAAAAAAAMCQAAAAAAAAgCEBAAAAAAAAQwIAAAAAAACGBAAAAAAAAAwJAAAAAAAAGBIAAAAAAAAwFI1uQzvZC+oaAAAAAElFTkSuQmCC",
+                "mime_type": "image/png"
+              }
+            ],
+            "line": 10,
+            "name": "Conversion islemi basarili olmali",
+            "match": {
+              "location": "ConversionSteps.conversion_islemi_basarili_olmali()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@halo20"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1792120392,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Login into account with correct details",
+        "description": "",
+        "id": "conversion-yaratma---fmx;login-into-account-with-correct-details;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 111839599,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDownAll(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3892259699,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User navigates to settlego website",
+            "match": {
+              "location": "LoginSteps.userNavigatesToNelevenWebsite()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1957747830,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"TestAutomation@com.com\" login olur",
+            "match": {
+              "arguments": [
+                {
+                  "val": "TestAutomation@com.com",
+                  "offset": 1
+                }
+              ],
+              "location": "LoginSteps.loginOlur(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 24692532595,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Satilacak currency \"British Pound\" ve alinacak currency \"Euro\" olan Amount to \"Buy\" secilen conversion islemi yapilir",
+            "match": {
+              "arguments": [
+                {
+                  "val": "British Pound",
+                  "offset": 20
+                },
+                {
+                  "val": "Euro",
+                  "offset": 57
+                },
+                {
+                  "val": "Buy",
+                  "offset": 79
+                }
+              ],
+              "location": "ConversionSteps.satilacak_currency_ve_alinacak_currency_olan_Amount_to_secilen_conversion_islemi_yapilir(String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 64061356,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Conversion islemi basarili olmali",
+            "match": {
+              "location": "ConversionSteps.conversion_islemi_basarili_olmali()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@halo20"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1296666187,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Login into account with correct details",
+        "description": "",
+        "id": "conversion-yaratma---fmx;login-into-account-with-correct-details;;6",
+        "after": [
+          {
+            "result": {
+              "duration": 131919887,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDownAll(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2857866541,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User navigates to settlego website",
+            "match": {
+              "location": "LoginSteps.userNavigatesToNelevenWebsite()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1816008196,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"TestAutomation@com.com\" login olur",
+            "match": {
+              "arguments": [
+                {
+                  "val": "TestAutomation@com.com",
+                  "offset": 1
+                }
+              ],
+              "location": "LoginSteps.loginOlur(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 24483101299,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Satilacak currency \"British Pound\" ve alinacak currency \"United States Dollar\" olan Amount to \"Sell\" secilen conversion islemi yapilir",
+            "match": {
+              "arguments": [
+                {
+                  "val": "British Pound",
+                  "offset": 20
+                },
+                {
+                  "val": "United States Dollar",
+                  "offset": 57
+                },
+                {
+                  "val": "Sell",
+                  "offset": 95
+                }
+              ],
+              "location": "ConversionSteps.satilacak_currency_ve_alinacak_currency_olan_Amount_to_secilen_conversion_islemi_yapilir(String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 63300307,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Conversion islemi basarili olmali",
+            "match": {
+              "location": "ConversionSteps.conversion_islemi_basarili_olmali()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@halo20"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1252111537,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Login into account with correct details",
+        "description": "",
+        "id": "conversion-yaratma---fmx;login-into-account-with-correct-details;;7",
+        "after": [
+          {
+            "result": {
+              "duration": 104796318,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDownAll(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2703357571,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User navigates to settlego website",
+            "match": {
+              "location": "LoginSteps.userNavigatesToNelevenWebsite()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1737730203,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"TestAutomation@com.com\" login olur",
+            "match": {
+              "arguments": [
+                {
+                  "val": "TestAutomation@com.com",
+                  "offset": 1
+                }
+              ],
+              "location": "LoginSteps.loginOlur(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 24447495258,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Satilacak currency \"British Pound\" ve alinacak currency \"United States Dollar\" olan Amount to \"Buy\" secilen conversion islemi yapilir",
+            "match": {
+              "arguments": [
+                {
+                  "val": "British Pound",
+                  "offset": 20
+                },
+                {
+                  "val": "United States Dollar",
+                  "offset": 57
+                },
+                {
+                  "val": "Buy",
+                  "offset": 95
+                }
+              ],
+              "location": "ConversionSteps.satilacak_currency_ve_alinacak_currency_olan_Amount_to_secilen_conversion_islemi_yapilir(String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 63395227,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Conversion islemi basarili olmali",
+            "match": {
+              "location": "ConversionSteps.conversion_islemi_basarili_olmali()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@halo20"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1256093750,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Login into account with correct details",
+        "description": "",
+        "id": "conversion-yaratma---fmx;login-into-account-with-correct-details;;8",
+        "after": [
+          {
+            "result": {
+              "duration": 115180073,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDownAll(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2245548594,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User navigates to settlego website",
+            "match": {
+              "location": "LoginSteps.userNavigatesToNelevenWebsite()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1648808567,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"TestAutomation@com.com\" login olur",
+            "match": {
+              "arguments": [
+                {
+                  "val": "TestAutomation@com.com",
+                  "offset": 1
+                }
+              ],
+              "location": "LoginSteps.loginOlur(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 24361217135,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Satilacak currency \"British Pound\" ve alinacak currency \"Hong Kong Dollar\" olan Amount to \"Sell\" secilen conversion islemi yapilir",
+            "match": {
+              "arguments": [
+                {
+                  "val": "British Pound",
+                  "offset": 20
+                },
+                {
+                  "val": "Hong Kong Dollar",
+                  "offset": 57
+                },
+                {
+                  "val": "Sell",
+                  "offset": 91
+                }
+              ],
+              "location": "ConversionSteps.satilacak_currency_ve_alinacak_currency_olan_Amount_to_secilen_conversion_islemi_yapilir(String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 63151920,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Conversion islemi basarili olmali",
+            "match": {
+              "location": "ConversionSteps.conversion_islemi_basarili_olmali()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@halo20"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1240602172,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Login into account with correct details",
+        "description": "",
+        "id": "conversion-yaratma---fmx;login-into-account-with-correct-details;;9",
+        "after": [
+          {
+            "result": {
+              "duration": 180748575,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDownAll(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2036726634,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User navigates to settlego website",
+            "match": {
+              "location": "LoginSteps.userNavigatesToNelevenWebsite()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1393143050,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"TestAutomation@com.com\" login olur",
+            "match": {
+              "arguments": [
+                {
+                  "val": "TestAutomation@com.com",
+                  "offset": 1
+                }
+              ],
+              "location": "LoginSteps.loginOlur(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 24461688425,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Satilacak currency \"British Pound\" ve alinacak currency \"Hong Kong Dollar\" olan Amount to \"Buy\" secilen conversion islemi yapilir",
+            "match": {
+              "arguments": [
+                {
+                  "val": "British Pound",
+                  "offset": 20
+                },
+                {
+                  "val": "Hong Kong Dollar",
+                  "offset": 57
+                },
+                {
+                  "val": "Buy",
+                  "offset": 91
+                }
+              ],
+              "location": "ConversionSteps.satilacak_currency_ve_alinacak_currency_olan_Amount_to_secilen_conversion_islemi_yapilir(String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 63962825,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Conversion islemi basarili olmali",
+            "match": {
+              "location": "ConversionSteps.conversion_islemi_basarili_olmali()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@halo20"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1267261141,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Login into account with correct details",
+        "description": "",
+        "id": "conversion-yaratma---fmx;login-into-account-with-correct-details;;10",
+        "after": [
+          {
+            "result": {
+              "duration": 161828448,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDownAll(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2225541271,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User navigates to settlego website",
+            "match": {
+              "location": "LoginSteps.userNavigatesToNelevenWebsite()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1470713292,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"TestAutomation@com.com\" login olur",
+            "match": {
+              "arguments": [
+                {
+                  "val": "TestAutomation@com.com",
+                  "offset": 1
+                }
+              ],
+              "location": "LoginSteps.loginOlur(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 24207906025,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Satilacak currency \"British Pound\" ve alinacak currency \"Canadian Dollar\" olan Amount to \"Sell\" secilen conversion islemi yapilir",
+            "match": {
+              "arguments": [
+                {
+                  "val": "British Pound",
+                  "offset": 20
+                },
+                {
+                  "val": "Canadian Dollar",
+                  "offset": 57
+                },
+                {
+                  "val": "Sell",
+                  "offset": 90
+                }
+              ],
+              "location": "ConversionSteps.satilacak_currency_ve_alinacak_currency_olan_Amount_to_secilen_conversion_islemi_yapilir(String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 65884403,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Conversion islemi basarili olmali",
+            "match": {
+              "location": "ConversionSteps.conversion_islemi_basarili_olmali()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@halo20"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1264028806,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "Login into account with correct details",
+        "description": "",
+        "id": "conversion-yaratma---fmx;login-into-account-with-correct-details;;11",
+        "after": [
+          {
+            "result": {
+              "duration": 195013521,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDownAll(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2202501532,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User navigates to settlego website",
+            "match": {
+              "location": "LoginSteps.userNavigatesToNelevenWebsite()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1458660991,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"TestAutomation@com.com\" login olur",
+            "match": {
+              "arguments": [
+                {
+                  "val": "TestAutomation@com.com",
+                  "offset": 1
+                }
+              ],
+              "location": "LoginSteps.loginOlur(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 24181260296,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Satilacak currency \"British Pound\" ve alinacak currency \"Canadian Dollar\" olan Amount to \"Buy\" secilen conversion islemi yapilir",
+            "match": {
+              "arguments": [
+                {
+                  "val": "British Pound",
+                  "offset": 20
+                },
+                {
+                  "val": "Canadian Dollar",
+                  "offset": 57
+                },
+                {
+                  "val": "Buy",
+                  "offset": 90
+                }
+              ],
+              "location": "ConversionSteps.satilacak_currency_ve_alinacak_currency_olan_Amount_to_secilen_conversion_islemi_yapilir(String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 64618871,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Conversion islemi basarili olmali",
+            "match": {
+              "location": "ConversionSteps.conversion_islemi_basarili_olmali()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@halo20"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1242077952,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "Login into account with correct details",
+        "description": "",
+        "id": "conversion-yaratma---fmx;login-into-account-with-correct-details;;12",
+        "after": [
+          {
+            "result": {
+              "duration": 141440154,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDownAll(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3786972810,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User navigates to settlego website",
+            "match": {
+              "location": "LoginSteps.userNavigatesToNelevenWebsite()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1570791011,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"TestAutomation@com.com\" login olur",
+            "match": {
+              "arguments": [
+                {
+                  "val": "TestAutomation@com.com",
+                  "offset": 1
+                }
+              ],
+              "location": "LoginSteps.loginOlur(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 24509138622,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Satilacak currency \"Euro\" ve alinacak currency \"Canadian Dollar\" olan Amount to \"Sell\" secilen conversion islemi yapilir",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Euro",
+                  "offset": 20
+                },
+                {
+                  "val": "Canadian Dollar",
+                  "offset": 48
+                },
+                {
+                  "val": "Sell",
+                  "offset": 81
+                }
+              ],
+              "location": "ConversionSteps.satilacak_currency_ve_alinacak_currency_olan_Amount_to_secilen_conversion_islemi_yapilir(String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 74545655,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Conversion islemi basarili olmali",
+            "match": {
+              "location": "ConversionSteps.conversion_islemi_basarili_olmali()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@halo20"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1354718942,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "Login into account with correct details",
+        "description": "",
+        "id": "conversion-yaratma---fmx;login-into-account-with-correct-details;;13",
+        "after": [
+          {
+            "result": {
+              "duration": 99537970,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDownAll(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3277930685,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User navigates to settlego website",
+            "match": {
+              "location": "LoginSteps.userNavigatesToNelevenWebsite()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2118075872,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"TestAutomation@com.com\" login olur",
+            "match": {
+              "arguments": [
+                {
+                  "val": "TestAutomation@com.com",
+                  "offset": 1
+                }
+              ],
+              "location": "LoginSteps.loginOlur(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 26279304164,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Satilacak currency \"Euro\" ve alinacak currency \"Canadian Dollar\" olan Amount to \"Buy\" secilen conversion islemi yapilir",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Euro",
+                  "offset": 20
+                },
+                {
+                  "val": "Canadian Dollar",
+                  "offset": 48
+                },
+                {
+                  "val": "Buy",
+                  "offset": 81
+                }
+              ],
+              "location": "ConversionSteps.satilacak_currency_ve_alinacak_currency_olan_Amount_to_secilen_conversion_islemi_yapilir(String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 67437980,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Conversion islemi basarili olmali",
+            "match": {
+              "location": "ConversionSteps.conversion_islemi_basarili_olmali()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@halo20"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1354858032,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "Login into account with correct details",
+        "description": "",
+        "id": "conversion-yaratma---fmx;login-into-account-with-correct-details;;14",
+        "after": [
+          {
+            "result": {
+              "duration": 124363251,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDownAll(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2287339873,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User navigates to settlego website",
+            "match": {
+              "location": "LoginSteps.userNavigatesToNelevenWebsite()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1985379248,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"TestAutomationMnx@com.com\" login olur",
+            "match": {
+              "arguments": [
+                {
+                  "val": "TestAutomationMnx@com.com",
+                  "offset": 1
+                }
+              ],
+              "location": "LoginSteps.loginOlur(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 24120056508,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Satilacak currency \"British Pound\" ve alinacak currency \"Euro\" olan Amount to \"Sell\" secilen conversion islemi yapilir",
+            "match": {
+              "arguments": [
+                {
+                  "val": "British Pound",
+                  "offset": 20
+                },
+                {
+                  "val": "Euro",
+                  "offset": 57
+                },
+                {
+                  "val": "Sell",
+                  "offset": 79
+                }
+              ],
+              "location": "ConversionSteps.satilacak_currency_ve_alinacak_currency_olan_Amount_to_secilen_conversion_islemi_yapilir(String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 66914520,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Conversion islemi basarili olmali",
+            "match": {
+              "location": "ConversionSteps.conversion_islemi_basarili_olmali()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@halo20"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1285647907,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "Login into account with correct details",
+        "description": "",
+        "id": "conversion-yaratma---fmx;login-into-account-with-correct-details;;15",
+        "after": [
+          {
+            "result": {
+              "duration": 131695918,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDownAll(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2281058180,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User navigates to settlego website",
+            "match": {
+              "location": "LoginSteps.userNavigatesToNelevenWebsite()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1263774133,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"TestAutomationMnx@com.com\" login olur",
+            "match": {
+              "arguments": [
+                {
+                  "val": "TestAutomationMnx@com.com",
+                  "offset": 1
+                }
+              ],
+              "location": "LoginSteps.loginOlur(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 24816819865,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Satilacak currency \"Euro\" ve alinacak currency \"British Pound\" olan Amount to \"Buy\" secilen conversion islemi yapilir",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Euro",
+                  "offset": 20
+                },
+                {
+                  "val": "British Pound",
+                  "offset": 48
+                },
+                {
+                  "val": "Buy",
+                  "offset": 79
+                }
+              ],
+              "location": "ConversionSteps.satilacak_currency_ve_alinacak_currency_olan_Amount_to_secilen_conversion_islemi_yapilir(String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 63946693,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Conversion islemi basarili olmali",
+            "match": {
+              "location": "ConversionSteps.conversion_islemi_basarili_olmali()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@halo20"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1234177436,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 30,
+        "name": "Login into account with correct details",
+        "description": "",
+        "id": "conversion-yaratma---fmx;login-into-account-with-correct-details;;16",
+        "after": [
+          {
+            "result": {
+              "duration": 196016494,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDownAll(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2215140272,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User navigates to settlego website",
+            "match": {
+              "location": "LoginSteps.userNavigatesToNelevenWebsite()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2249567709,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"TestAutomationMnx@com.com\" login olur",
+            "match": {
+              "arguments": [
+                {
+                  "val": "TestAutomationMnx@com.com",
+                  "offset": 1
+                }
+              ],
+              "location": "LoginSteps.loginOlur(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 24078354744,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Satilacak currency \"Euro\" ve alinacak currency \"British Pound\" olan Amount to \"Sell\" secilen conversion islemi yapilir",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Euro",
+                  "offset": 20
+                },
+                {
+                  "val": "British Pound",
+                  "offset": 48
+                },
+                {
+                  "val": "Sell",
+                  "offset": 79
+                }
+              ],
+              "location": "ConversionSteps.satilacak_currency_ve_alinacak_currency_olan_Amount_to_secilen_conversion_islemi_yapilir(String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 63263393,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Conversion islemi basarili olmali",
+            "match": {
+              "location": "ConversionSteps.conversion_islemi_basarili_olmali()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@halo20"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1279538661,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "Login into account with correct details",
+        "description": "",
+        "id": "conversion-yaratma---fmx;login-into-account-with-correct-details;;17",
+        "after": [
+          {
+            "result": {
+              "duration": 115749246,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDownAll(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2182576342,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User navigates to settlego website",
+            "match": {
+              "location": "LoginSteps.userNavigatesToNelevenWebsite()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2532279375,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"TestAutomationMnx@com.com\" login olur",
+            "match": {
+              "arguments": [
+                {
+                  "val": "TestAutomationMnx@com.com",
+                  "offset": 1
+                }
+              ],
+              "location": "LoginSteps.loginOlur(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 23811283017,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Satilacak currency \"British Pound\" ve alinacak currency \"Euro\" olan Amount to \"Buy\" secilen conversion islemi yapilir",
+            "match": {
+              "arguments": [
+                {
+                  "val": "British Pound",
+                  "offset": 20
+                },
+                {
+                  "val": "Euro",
+                  "offset": 57
+                },
+                {
+                  "val": "Buy",
+                  "offset": 79
+                }
+              ],
+              "location": "ConversionSteps.satilacak_currency_ve_alinacak_currency_olan_Amount_to_secilen_conversion_islemi_yapilir(String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 63321571,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Conversion islemi basarili olmali",
+            "match": {
+              "location": "ConversionSteps.conversion_islemi_basarili_olmali()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@halo20"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1389340322,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 32,
+        "name": "Login into account with correct details",
+        "description": "",
+        "id": "conversion-yaratma---fmx;login-into-account-with-correct-details;;18",
+        "after": [
+          {
+            "result": {
+              "duration": 106141704,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDownAll(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2395464732,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User navigates to settlego website",
+            "match": {
+              "location": "LoginSteps.userNavigatesToNelevenWebsite()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1332639685,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"TestAutomationMnx@com.com\" login olur",
+            "match": {
+              "arguments": [
+                {
+                  "val": "TestAutomationMnx@com.com",
+                  "offset": 1
+                }
+              ],
+              "location": "LoginSteps.loginOlur(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 24249697479,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Satilacak currency \"British Pound\" ve alinacak currency \"United States Dollar\" olan Amount to \"Sell\" secilen conversion islemi yapilir",
+            "match": {
+              "arguments": [
+                {
+                  "val": "British Pound",
+                  "offset": 20
+                },
+                {
+                  "val": "United States Dollar",
+                  "offset": 57
+                },
+                {
+                  "val": "Sell",
+                  "offset": 95
+                }
+              ],
+              "location": "ConversionSteps.satilacak_currency_ve_alinacak_currency_olan_Amount_to_secilen_conversion_islemi_yapilir(String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 63123188,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Conversion islemi basarili olmali",
+            "match": {
+              "location": "ConversionSteps.conversion_islemi_basarili_olmali()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@halo20"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1300627498,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 33,
+        "name": "Login into account with correct details",
+        "description": "",
+        "id": "conversion-yaratma---fmx;login-into-account-with-correct-details;;19",
+        "after": [
+          {
+            "result": {
+              "duration": 159856695,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDownAll(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2267838699,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User navigates to settlego website",
+            "match": {
+              "location": "LoginSteps.userNavigatesToNelevenWebsite()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1422146491,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"TestAutomationMnx@com.com\" login olur",
+            "match": {
+              "arguments": [
+                {
+                  "val": "TestAutomationMnx@com.com",
+                  "offset": 1
+                }
+              ],
+              "location": "LoginSteps.loginOlur(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 24601282952,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Satilacak currency \"British Pound\" ve alinacak currency \"United States Dollar\" olan Amount to \"Buy\" secilen conversion islemi yapilir",
+            "match": {
+              "arguments": [
+                {
+                  "val": "British Pound",
+                  "offset": 20
+                },
+                {
+                  "val": "United States Dollar",
+                  "offset": 57
+                },
+                {
+                  "val": "Buy",
+                  "offset": 95
+                }
+              ],
+              "location": "ConversionSteps.satilacak_currency_ve_alinacak_currency_olan_Amount_to_secilen_conversion_islemi_yapilir(String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 85438396,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Conversion islemi basarili olmali",
+            "match": {
+              "location": "ConversionSteps.conversion_islemi_basarili_olmali()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@halo20"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1266068447,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 34,
+        "name": "Login into account with correct details",
+        "description": "",
+        "id": "conversion-yaratma---fmx;login-into-account-with-correct-details;;20",
+        "after": [
+          {
+            "result": {
+              "duration": 133340165,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDownAll(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2165068692,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User navigates to settlego website",
+            "match": {
+              "location": "LoginSteps.userNavigatesToNelevenWebsite()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1898735087,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"TestAutomationMnx@com.com\" login olur",
+            "match": {
+              "arguments": [
+                {
+                  "val": "TestAutomationMnx@com.com",
+                  "offset": 1
+                }
+              ],
+              "location": "LoginSteps.loginOlur(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 24236031749,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Satilacak currency \"British Pound\" ve alinacak currency \"Hong Kong Dollar\" olan Amount to \"Sell\" secilen conversion islemi yapilir",
+            "match": {
+              "arguments": [
+                {
+                  "val": "British Pound",
+                  "offset": 20
+                },
+                {
+                  "val": "Hong Kong Dollar",
+                  "offset": 57
+                },
+                {
+                  "val": "Sell",
+                  "offset": 91
+                }
+              ],
+              "location": "ConversionSteps.satilacak_currency_ve_alinacak_currency_olan_Amount_to_secilen_conversion_islemi_yapilir(String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 65351235,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Conversion islemi basarili olmali",
+            "match": {
+              "location": "ConversionSteps.conversion_islemi_basarili_olmali()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@halo20"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1378148595,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 35,
+        "name": "Login into account with correct details",
+        "description": "",
+        "id": "conversion-yaratma---fmx;login-into-account-with-correct-details;;21",
+        "after": [
+          {
+            "result": {
+              "duration": 100479387,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDownAll(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2206615553,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User navigates to settlego website",
+            "match": {
+              "location": "LoginSteps.userNavigatesToNelevenWebsite()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2176210339,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"TestAutomationMnx@com.com\" login olur",
+            "match": {
+              "arguments": [
+                {
+                  "val": "TestAutomationMnx@com.com",
+                  "offset": 1
+                }
+              ],
+              "location": "LoginSteps.loginOlur(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 24543892236,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Satilacak currency \"British Pound\" ve alinacak currency \"Hong Kong Dollar\" olan Amount to \"Buy\" secilen conversion islemi yapilir",
+            "match": {
+              "arguments": [
+                {
+                  "val": "British Pound",
+                  "offset": 20
+                },
+                {
+                  "val": "Hong Kong Dollar",
+                  "offset": 57
+                },
+                {
+                  "val": "Buy",
+                  "offset": 91
+                }
+              ],
+              "location": "ConversionSteps.satilacak_currency_ve_alinacak_currency_olan_Amount_to_secilen_conversion_islemi_yapilir(String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 64123249,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Conversion islemi basarili olmali",
+            "match": {
+              "location": "ConversionSteps.conversion_islemi_basarili_olmali()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@halo20"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 966214805,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 36,
+        "name": "Login into account with correct details",
+        "description": "",
+        "id": "conversion-yaratma---fmx;login-into-account-with-correct-details;;22",
+        "after": [
+          {
+            "result": {
+              "duration": 107857388,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDownAll(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2292750736,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User navigates to settlego website",
+            "match": {
+              "location": "LoginSteps.userNavigatesToNelevenWebsite()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1414672892,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"TestAutomationMnx@com.com\" login olur",
+            "match": {
+              "arguments": [
+                {
+                  "val": "TestAutomationMnx@com.com",
+                  "offset": 1
+                }
+              ],
+              "location": "LoginSteps.loginOlur(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 25504009683,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Satilacak currency \"British Pound\" ve alinacak currency \"Canadian Dollar\" olan Amount to \"Sell\" secilen conversion islemi yapilir",
+            "match": {
+              "arguments": [
+                {
+                  "val": "British Pound",
+                  "offset": 20
+                },
+                {
+                  "val": "Canadian Dollar",
+                  "offset": 57
+                },
+                {
+                  "val": "Sell",
+                  "offset": 90
+                }
+              ],
+              "location": "ConversionSteps.satilacak_currency_ve_alinacak_currency_olan_Amount_to_secilen_conversion_islemi_yapilir(String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 64598943,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Conversion islemi basarili olmali",
+            "match": {
+              "location": "ConversionSteps.conversion_islemi_basarili_olmali()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@halo20"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 991135717,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 37,
+        "name": "Login into account with correct details",
+        "description": "",
+        "id": "conversion-yaratma---fmx;login-into-account-with-correct-details;;23",
+        "after": [
+          {
+            "result": {
+              "duration": 158635735,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDownAll(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2133636141,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User navigates to settlego website",
+            "match": {
+              "location": "LoginSteps.userNavigatesToNelevenWebsite()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1292999926,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"TestAutomationMnx@com.com\" login olur",
+            "match": {
+              "arguments": [
+                {
+                  "val": "TestAutomationMnx@com.com",
+                  "offset": 1
+                }
+              ],
+              "location": "LoginSteps.loginOlur(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 24693755210,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Satilacak currency \"British Pound\" ve alinacak currency \"Canadian Dollar\" olan Amount to \"Buy\" secilen conversion islemi yapilir",
+            "match": {
+              "arguments": [
+                {
+                  "val": "British Pound",
+                  "offset": 20
+                },
+                {
+                  "val": "Canadian Dollar",
+                  "offset": 57
+                },
+                {
+                  "val": "Buy",
+                  "offset": 90
+                }
+              ],
+              "location": "ConversionSteps.satilacak_currency_ve_alinacak_currency_olan_Amount_to_secilen_conversion_islemi_yapilir(String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 64565169,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Conversion islemi basarili olmali",
+            "match": {
+              "location": "ConversionSteps.conversion_islemi_basarili_olmali()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@halo20"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 941032259,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 38,
+        "name": "Login into account with correct details",
+        "description": "",
+        "id": "conversion-yaratma---fmx;login-into-account-with-correct-details;;24",
+        "after": [
+          {
+            "result": {
+              "duration": 178996398,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDownAll(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3855142002,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User navigates to settlego website",
+            "match": {
+              "location": "LoginSteps.userNavigatesToNelevenWebsite()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1632360824,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"TestAutomationMnx@com.com\" login olur",
+            "match": {
+              "arguments": [
+                {
+                  "val": "TestAutomationMnx@com.com",
+                  "offset": 1
+                }
+              ],
+              "location": "LoginSteps.loginOlur(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 24973344426,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Satilacak currency \"Euro\" ve alinacak currency \"Canadian Dollar\" olan Amount to \"Sell\" secilen conversion islemi yapilir",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Euro",
+                  "offset": 20
+                },
+                {
+                  "val": "Canadian Dollar",
+                  "offset": 48
+                },
+                {
+                  "val": "Sell",
+                  "offset": 81
+                }
+              ],
+              "location": "ConversionSteps.satilacak_currency_ve_alinacak_currency_olan_Amount_to_secilen_conversion_islemi_yapilir(String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 65875177,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Conversion islemi basarili olmali",
+            "match": {
+              "location": "ConversionSteps.conversion_islemi_basarili_olmali()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@halo20"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 995664402,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setup()"
+            }
+          }
+        ],
+        "line": 39,
+        "name": "Login into account with correct details",
+        "description": "",
+        "id": "conversion-yaratma---fmx;login-into-account-with-correct-details;;25",
+        "after": [
+          {
+            "result": {
+              "duration": 131704513,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDownAll(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2924266419,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User navigates to settlego website",
+            "match": {
+              "location": "LoginSteps.userNavigatesToNelevenWebsite()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1826394762,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "\"TestAutomationMnx@com.com\" login olur",
+            "match": {
+              "arguments": [
+                {
+                  "val": "TestAutomationMnx@com.com",
+                  "offset": 1
+                }
+              ],
+              "location": "LoginSteps.loginOlur(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 24300229066,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Satilacak currency \"Euro\" ve alinacak currency \"Canadian Dollar\" olan Amount to \"Buy\" secilen conversion islemi yapilir",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Euro",
+                  "offset": 20
+                },
+                {
+                  "val": "Canadian Dollar",
+                  "offset": 48
+                },
+                {
+                  "val": "Buy",
+                  "offset": 81
+                }
+              ],
+              "location": "ConversionSteps.satilacak_currency_ve_alinacak_currency_olan_Amount_to_secilen_conversion_islemi_yapilir(String,String,String)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 64332444,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Conversion islemi basarili olmali",
+            "match": {
+              "location": "ConversionSteps.conversion_islemi_basarili_olmali()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@halo20"
+          }
+        ]
+      }
+    ],
+    "name": "Conversion Yaratma - FMX",
+    "description": "\nExisting settle go user should be able to login",
+    "id": "conversion-yaratma---fmx",
+    "keyword": "Feature",
+    "uri": "Conversion.feature"
+  }
+]

@@ -1,0 +1,3559 @@
+
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<meta charset='utf-8' /> 
+	<meta name='description' content='' />
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	<meta id="timeStampFormat" name="timeStampFormat" content='MMM d, yyyy hh:mm:ss a'/>
+	
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+		<link href='https://cdn.rawgit.com/anshooarora/extentreports-java/0ef94479b1fc7c18041d6bbf1a8cfbfa321edc0a/dist/css/extent.css' type='text/css' rel='stylesheet' />
+	
+	<title>ExtentReports</title>
+
+</head>
+
+	<body class='extent standard default hide-overflow '>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+
+<nav>
+	<div class="nav-wrapper">
+		<a href="#!" class="brand-logo blue darken-3">Extent</a>
+
+		<!-- slideout menu -->
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+						<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+		</ul>
+
+		<!-- report name -->
+		<span class='report-name'>ExtentReports</span>
+		
+		<!-- report headline -->
+		<span class='report-headline'></span>
+
+		<!-- nav-right -->
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<li>
+                <a href='#!'>
+                    <span class='label suite-start-time blue darken-3'>Oct 23, 2018 03:40:09 PM</span>
+				</a>
+			</li>
+			<li>
+                <a href='#!'>
+                    <span class='label blue darken-3'>v3.0.5</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+		<!-- container -->
+		<div class='container'>
+
+<div id='test-view' class='view'>
+				
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+						<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
+					<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+
+			<!-- category toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button category-toggle' data-activates='category-toggle' data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#'>
+					<i class='material-icons'>local_offer</i> Category
+				</a>
+				<ul id='category-toggle' class='dropdown-content'>
+					<li><a href='#'>@halo20</a></li>
+					<li class='divider'></li>
+					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
+				</ul>
+			</div>
+			<!-- category toggle -->
+
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+					<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='pink-text' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+					<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+
+<div id='test-view-charts' class='subview-full'>
+	<div id='charts-row' class='row nm-v nm-h'>
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Tests</div>
+				<div class='chart-box'>
+					<canvas id='parent-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='97.917%'><span class='strong'>94</span> test(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='1.042%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='1.042%'>1</span> others
+				</div>
+			</div>
+		</div>
+		
+		<div class='col s12 m6 l6 np-h'>
+			<div class='card-panel nm-v'>
+				<div class='left panel-name'>Steps</div>
+				<div class='chart-box'>
+					<canvas id='child-analysis' width='100' height='80'></canvas>
+				</div>
+				<div class='block text-small'>
+					<span class='tooltipped' data-position='top' data-tooltip='97.917%'><span class='strong'>94</span> step(s) passed</span>
+				</div>
+				<div class='block text-small'>
+					<span class='strong tooltipped' data-position='top' data-tooltip='1.042%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='1.042%'>1</span> others
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</div>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Tests</h5>
+			<ul id='test-collection' class='test-collection'>
+				
+				
+				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='1'>
+					<div class='test-heading'>
+						<span class='test-name'>Conversion Yaratma - FMX</span>
+						<span class='test-time'>Oct 23, 2018 03:40:09 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Oct 23, 2018 03:40:09 PM</span>
+	<span class='label end-time'>Oct 23, 2018 03:55:07 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 14m 58s+662ms</span>
+</div>
+	<ul class='collapsible node-list' data-collapsible='accordion'>
+		
+				<li class='node level-1  fail' status='fail' test-id='2'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Scenario Outline: Login into account with correct details</div>						
+						<span class='node-time'>Oct 23, 2018 03:40:09 PM</span>
+						<span class='node-duration'>0h 14m 58s+659ms</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='info'>
+													<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+													<td class='timestamp'>3:40:09 PM</td>
+													<td class='step-details'><table><tr><td>kullanici</td><td>sellCurrency</td><td>buyCurrency</td><td>AmountTo</td></tr><tr><td>TestAutomation@com.com</td><td>British Pound</td><td>Euro</td><td>Sell</td></tr><tr><td>TestAutomation@com.com</td><td>Euro</td><td>British Pound</td><td>Buy</td></tr><tr><td>TestAutomation@com.com</td><td>Euro</td><td>British Pound</td><td>Sell</td></tr><tr><td>TestAutomation@com.com</td><td>British Pound</td><td>Euro</td><td>Buy</td></tr><tr><td>TestAutomation@com.com</td><td>British Pound</td><td>United States Dollar</td><td>Sell</td></tr><tr><td>TestAutomation@com.com</td><td>British Pound</td><td>United States Dollar</td><td>Buy</td></tr><tr><td>TestAutomation@com.com</td><td>British Pound</td><td>Hong Kong Dollar</td><td>Sell</td></tr><tr><td>TestAutomation@com.com</td><td>British Pound</td><td>Hong Kong Dollar</td><td>Buy</td></tr><tr><td>TestAutomation@com.com</td><td>British Pound</td><td>Canadian Dollar</td><td>Sell</td></tr><tr><td>TestAutomation@com.com</td><td>British Pound</td><td>Canadian Dollar</td><td>Buy</td></tr><tr><td>TestAutomation@com.com</td><td>Euro</td><td>Canadian Dollar</td><td>Sell</td></tr><tr><td>TestAutomation@com.com</td><td>Euro</td><td>Canadian Dollar</td><td>Buy</td></tr><tr><td>TestAutomationMnx@com.com</td><td>British Pound</td><td>Euro</td><td>Sell</td></tr><tr><td>TestAutomationMnx@com.com</td><td>Euro</td><td>British Pound</td><td>Buy</td></tr><tr><td>TestAutomationMnx@com.com</td><td>Euro</td><td>British Pound</td><td>Sell</td></tr><tr><td>TestAutomationMnx@com.com</td><td>British Pound</td><td>Euro</td><td>Buy</td></tr><tr><td>TestAutomationMnx@com.com</td><td>British Pound</td><td>United States Dollar</td><td>Sell</td></tr><tr><td>TestAutomationMnx@com.com</td><td>British Pound</td><td>United States Dollar</td><td>Buy</td></tr><tr><td>TestAutomationMnx@com.com</td><td>British Pound</td><td>Hong Kong Dollar</td><td>Sell</td></tr><tr><td>TestAutomationMnx@com.com</td><td>British Pound</td><td>Hong Kong Dollar</td><td>Buy</td></tr><tr><td>TestAutomationMnx@com.com</td><td>British Pound</td><td>Canadian Dollar</td><td>Sell</td></tr><tr><td>TestAutomationMnx@com.com</td><td>British Pound</td><td>Canadian Dollar</td><td>Buy</td></tr><tr><td>TestAutomationMnx@com.com</td><td>Euro</td><td>Canadian Dollar</td><td>Sell</td></tr><tr><td>TestAutomationMnx@com.com</td><td>Euro</td><td>Canadian Dollar</td><td>Buy</td></tr></table></td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+						<ul class='collapsible node-list' data-collapsible='accordion'>
+				<li class='node level-2  pass' status='pass' test-id='3'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Scenario: Login into account with correct details</div>						
+						<span class='node-time'>Oct 23, 2018 03:40:09 PM</span>
+						<span class='node-duration'>0h 0m 33s+822ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<ul class='collapsible node-list' data-collapsible='accordion'>
+				<li class='node level-3 leaf pass' status='pass' test-id='4'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Given User navigates to settlego website</div>						
+						<span class='node-time'>Oct 23, 2018 03:40:11 PM</span>
+						<span class='node-duration'>0h 0m 4s+901ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:40:16 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='5'>
+					<div class='collapsible-header'>
+						<div class='node-name'>When "TestAutomation@com.com" login olur</div>						
+						<span class='node-time'>Oct 23, 2018 03:40:16 PM</span>
+						<span class='node-duration'>0h 0m 2s+245ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:40:18 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='6'>
+					<div class='collapsible-header'>
+						<div class='node-name'>And Satilacak currency "British Pound" ve alinacak currency "Euro" olan Amount to "Sell" secilen conversion islemi yapilir</div>						
+						<span class='node-time'>Oct 23, 2018 03:40:18 PM</span>
+						<span class='node-duration'>0h 0m 24s+202ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:40:43 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='7'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Then Conversion islemi basarili olmali</div>						
+						<span class='node-time'>Oct 23, 2018 03:40:43 PM</span>
+						<span class='node-duration'>0h 0m 0s+67ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:40:43 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+						</ul>
+				</li>
+				<li class='node level-2  pass' status='pass' test-id='8'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Scenario: Login into account with correct details</div>						
+						<span class='node-time'>Oct 23, 2018 03:40:43 PM</span>
+						<span class='node-duration'>0h 0m 32s+760ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<ul class='collapsible node-list' data-collapsible='accordion'>
+				<li class='node level-3 leaf pass' status='pass' test-id='9'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Given User navigates to settlego website</div>						
+						<span class='node-time'>Oct 23, 2018 03:40:44 PM</span>
+						<span class='node-duration'>0h 0m 4s+755ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:40:49 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='10'>
+					<div class='collapsible-header'>
+						<div class='node-name'>When "TestAutomation@com.com" login olur</div>						
+						<span class='node-time'>Oct 23, 2018 03:40:49 PM</span>
+						<span class='node-duration'>0h 0m 1s+914ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:40:51 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='11'>
+					<div class='collapsible-header'>
+						<div class='node-name'>And Satilacak currency "Euro" ve alinacak currency "British Pound" olan Amount to "Buy" secilen conversion islemi yapilir</div>						
+						<span class='node-time'>Oct 23, 2018 03:40:51 PM</span>
+						<span class='node-duration'>0h 0m 24s+437ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:41:16 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='12'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Then Conversion islemi basarili olmali</div>						
+						<span class='node-time'>Oct 23, 2018 03:41:16 PM</span>
+						<span class='node-duration'>0h 0m 0s+72ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:41:16 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+						</ul>
+				</li>
+				<li class='node level-2  fail' status='fail' test-id='13'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Scenario: Login into account with correct details</div>						
+						<span class='node-time'>Oct 23, 2018 03:41:16 PM</span>
+						<span class='node-duration'>0h 0m 45s+282ms</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+						<ul class='collapsible node-list' data-collapsible='accordion'>
+				<li class='node level-3 leaf pass' status='pass' test-id='14'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Given User navigates to settlego website</div>						
+						<span class='node-time'>Oct 23, 2018 03:41:17 PM</span>
+						<span class='node-duration'>0h 0m 3s+314ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:41:20 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='15'>
+					<div class='collapsible-header'>
+						<div class='node-name'>When "TestAutomation@com.com" login olur</div>						
+						<span class='node-time'>Oct 23, 2018 03:41:20 PM</span>
+						<span class='node-duration'>0h 0m 12s+17ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:41:32 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf fail' status='fail' test-id='16'>
+					<div class='collapsible-header'>
+						<div class='node-name'>And Satilacak currency "Euro" ve alinacak currency "British Pound" olan Amount to "Sell" secilen conversion islemi yapilir</div>						
+						<span class='node-time'>Oct 23, 2018 03:41:32 PM</span>
+						<span class='node-duration'>0h 0m 28s+547ms</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='fail'>
+													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+													<td class='timestamp'>3:42:01 PM</td>
+													<td class='step-details'><textarea>org.openqa.selenium.WebDriverException: unknown error: Element <input type="submit" class="btn-style reverted pull-right full-mobile" value="Get a Quote" data-reactid=".0.3.0.0.1.0.1.0.0.6.1"> is not clickable at point (616, 753). Other element would receive the click: <div class="loader-overlay" data-reactid=".0.4" style="display: block; opacity: 0.666873;">...</div>
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.41.578706 (5f725d1b4f0a4acbf5259df887244095596231db),platform=Mac OS X 10.12.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 48 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'Berk-MacBook-Pro.local', ip: '192.168.34.126', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:57688}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.41.578706 (5f725d1b4f0a4acbf5259df887244095596231db), userDataDir=/var/folders/cl/dp0_2m3s2rx99p5p_z0v_y280000gn/T/.org.chromium.Chromium.0c85wR}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c61cb8ce3a1d1dc611548a29147a758f
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+	at pageobject.ConversionPage.ConversionPage(ConversionPage.java:29)
+	at steps.ConversionSteps.satilacak_currency_ve_alinacak_currency_olan_Amount_to_secilen_conversion_islemi_yapilir(ConversionSteps.java:19)
+	at ✽.And Satilacak currency "Euro" ve alinacak currency "British Pound" olan Amount to "Sell" secilen conversion islemi yapilir(Conversion.feature:9)
+</textarea></td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf skip' status='skip' test-id='17'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Then Conversion islemi basarili olmali</div>						
+						<span class='node-time'>Oct 23, 2018 03:42:01 PM</span>
+						<span class='node-duration'>0h 0m 0s+1ms</span>
+						<span class='test-status right skip'>skip</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='skip'>
+													<td class='status skip' title='skip' alt='skip'><i class='material-icons'>redo</i></td>
+													<td class='timestamp'>3:42:01 PM</td>
+													<td class='step-details'>skipped</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+						</ul>
+				</li>
+				<li class='node level-2  pass' status='pass' test-id='18'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Scenario: Login into account with correct details</div>						
+						<span class='node-time'>Oct 23, 2018 03:44:30 PM</span>
+						<span class='node-duration'>0h 0m 32s+414ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<ul class='collapsible node-list' data-collapsible='accordion'>
+				<li class='node level-3 leaf pass' status='pass' test-id='19'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Given User navigates to settlego website</div>						
+						<span class='node-time'>Oct 23, 2018 03:44:32 PM</span>
+						<span class='node-duration'>0h 0m 3s+894ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:44:36 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='20'>
+					<div class='collapsible-header'>
+						<div class='node-name'>When "TestAutomation@com.com" login olur</div>						
+						<span class='node-time'>Oct 23, 2018 03:44:36 PM</span>
+						<span class='node-duration'>0h 0m 1s+960ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:44:38 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='21'>
+					<div class='collapsible-header'>
+						<div class='node-name'>And Satilacak currency "British Pound" ve alinacak currency "Euro" olan Amount to "Buy" secilen conversion islemi yapilir</div>						
+						<span class='node-time'>Oct 23, 2018 03:44:38 PM</span>
+						<span class='node-duration'>0h 0m 24s+695ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:45:03 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='22'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Then Conversion islemi basarili olmali</div>						
+						<span class='node-time'>Oct 23, 2018 03:45:03 PM</span>
+						<span class='node-duration'>0h 0m 0s+65ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:45:03 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+						</ul>
+				</li>
+				<li class='node level-2  pass' status='pass' test-id='23'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Scenario: Login into account with correct details</div>						
+						<span class='node-time'>Oct 23, 2018 03:45:03 PM</span>
+						<span class='node-duration'>0h 0m 30s+528ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<ul class='collapsible node-list' data-collapsible='accordion'>
+				<li class='node level-3 leaf pass' status='pass' test-id='24'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Given User navigates to settlego website</div>						
+						<span class='node-time'>Oct 23, 2018 03:45:04 PM</span>
+						<span class='node-duration'>0h 0m 2s+859ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:45:07 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='25'>
+					<div class='collapsible-header'>
+						<div class='node-name'>When "TestAutomation@com.com" login olur</div>						
+						<span class='node-time'>Oct 23, 2018 03:45:07 PM</span>
+						<span class='node-duration'>0h 0m 1s+817ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:45:09 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='26'>
+					<div class='collapsible-header'>
+						<div class='node-name'>And Satilacak currency "British Pound" ve alinacak currency "United States Dollar" olan Amount to "Sell" secilen conversion islemi yapilir</div>						
+						<span class='node-time'>Oct 23, 2018 03:45:09 PM</span>
+						<span class='node-duration'>0h 0m 24s+486ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:45:33 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='27'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Then Conversion islemi basarili olmali</div>						
+						<span class='node-time'>Oct 23, 2018 03:45:33 PM</span>
+						<span class='node-duration'>0h 0m 0s+64ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:45:34 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+						</ul>
+				</li>
+				<li class='node level-2  pass' status='pass' test-id='28'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Scenario: Login into account with correct details</div>						
+						<span class='node-time'>Oct 23, 2018 03:45:34 PM</span>
+						<span class='node-duration'>0h 0m 30s+220ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<ul class='collapsible node-list' data-collapsible='accordion'>
+				<li class='node level-3 leaf pass' status='pass' test-id='29'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Given User navigates to settlego website</div>						
+						<span class='node-time'>Oct 23, 2018 03:45:35 PM</span>
+						<span class='node-duration'>0h 0m 2s+705ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:45:38 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='30'>
+					<div class='collapsible-header'>
+						<div class='node-name'>When "TestAutomation@com.com" login olur</div>						
+						<span class='node-time'>Oct 23, 2018 03:45:38 PM</span>
+						<span class='node-duration'>0h 0m 1s+738ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:45:39 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='31'>
+					<div class='collapsible-header'>
+						<div class='node-name'>And Satilacak currency "British Pound" ve alinacak currency "United States Dollar" olan Amount to "Buy" secilen conversion islemi yapilir</div>						
+						<span class='node-time'>Oct 23, 2018 03:45:39 PM</span>
+						<span class='node-duration'>0h 0m 24s+450ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:46:04 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='32'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Then Conversion islemi basarili olmali</div>						
+						<span class='node-time'>Oct 23, 2018 03:46:04 PM</span>
+						<span class='node-duration'>0h 0m 0s+64ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:46:04 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+						</ul>
+				</li>
+				<li class='node level-2  pass' status='pass' test-id='33'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Scenario: Login into account with correct details</div>						
+						<span class='node-time'>Oct 23, 2018 03:46:04 PM</span>
+						<span class='node-duration'>0h 0m 29s+587ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<ul class='collapsible node-list' data-collapsible='accordion'>
+				<li class='node level-3 leaf pass' status='pass' test-id='34'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Given User navigates to settlego website</div>						
+						<span class='node-time'>Oct 23, 2018 03:46:05 PM</span>
+						<span class='node-duration'>0h 0m 2s+247ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:46:07 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='35'>
+					<div class='collapsible-header'>
+						<div class='node-name'>When "TestAutomation@com.com" login olur</div>						
+						<span class='node-time'>Oct 23, 2018 03:46:07 PM</span>
+						<span class='node-duration'>0h 0m 1s+649ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:46:09 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='36'>
+					<div class='collapsible-header'>
+						<div class='node-name'>And Satilacak currency "British Pound" ve alinacak currency "Hong Kong Dollar" olan Amount to "Sell" secilen conversion islemi yapilir</div>						
+						<span class='node-time'>Oct 23, 2018 03:46:09 PM</span>
+						<span class='node-duration'>0h 0m 24s+364ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:46:33 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='37'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Then Conversion islemi basarili olmali</div>						
+						<span class='node-time'>Oct 23, 2018 03:46:33 PM</span>
+						<span class='node-duration'>0h 0m 0s+64ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:46:34 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+						</ul>
+				</li>
+				<li class='node level-2  pass' status='pass' test-id='38'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Scenario: Login into account with correct details</div>						
+						<span class='node-time'>Oct 23, 2018 03:46:34 PM</span>
+						<span class='node-duration'>0h 0m 29s+208ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<ul class='collapsible node-list' data-collapsible='accordion'>
+				<li class='node level-3 leaf pass' status='pass' test-id='39'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Given User navigates to settlego website</div>						
+						<span class='node-time'>Oct 23, 2018 03:46:35 PM</span>
+						<span class='node-duration'>0h 0m 2s+38ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:46:37 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='40'>
+					<div class='collapsible-header'>
+						<div class='node-name'>When "TestAutomation@com.com" login olur</div>						
+						<span class='node-time'>Oct 23, 2018 03:46:37 PM</span>
+						<span class='node-duration'>0h 0m 1s+394ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:46:38 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='41'>
+					<div class='collapsible-header'>
+						<div class='node-name'>And Satilacak currency "British Pound" ve alinacak currency "Hong Kong Dollar" olan Amount to "Buy" secilen conversion islemi yapilir</div>						
+						<span class='node-time'>Oct 23, 2018 03:46:38 PM</span>
+						<span class='node-duration'>0h 0m 24s+465ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:47:03 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='42'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Then Conversion islemi basarili olmali</div>						
+						<span class='node-time'>Oct 23, 2018 03:47:03 PM</span>
+						<span class='node-duration'>0h 0m 0s+65ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:47:03 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+						</ul>
+				</li>
+				<li class='node level-2  pass' status='pass' test-id='43'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Scenario: Login into account with correct details</div>						
+						<span class='node-time'>Oct 23, 2018 03:47:03 PM</span>
+						<span class='node-duration'>0h 0m 29s+250ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<ul class='collapsible node-list' data-collapsible='accordion'>
+				<li class='node level-3 leaf pass' status='pass' test-id='44'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Given User navigates to settlego website</div>						
+						<span class='node-time'>Oct 23, 2018 03:47:04 PM</span>
+						<span class='node-duration'>0h 0m 2s+227ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:47:07 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='45'>
+					<div class='collapsible-header'>
+						<div class='node-name'>When "TestAutomation@com.com" login olur</div>						
+						<span class='node-time'>Oct 23, 2018 03:47:07 PM</span>
+						<span class='node-duration'>0h 0m 1s+471ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:47:08 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='46'>
+					<div class='collapsible-header'>
+						<div class='node-name'>And Satilacak currency "British Pound" ve alinacak currency "Canadian Dollar" olan Amount to "Sell" secilen conversion islemi yapilir</div>						
+						<span class='node-time'>Oct 23, 2018 03:47:08 PM</span>
+						<span class='node-duration'>0h 0m 24s+211ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:47:32 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='47'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Then Conversion islemi basarili olmali</div>						
+						<span class='node-time'>Oct 23, 2018 03:47:32 PM</span>
+						<span class='node-duration'>0h 0m 0s+67ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:47:32 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+						</ul>
+				</li>
+				<li class='node level-2  pass' status='pass' test-id='48'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Scenario: Login into account with correct details</div>						
+						<span class='node-time'>Oct 23, 2018 03:47:32 PM</span>
+						<span class='node-duration'>0h 0m 29s+182ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<ul class='collapsible node-list' data-collapsible='accordion'>
+				<li class='node level-3 leaf pass' status='pass' test-id='49'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Given User navigates to settlego website</div>						
+						<span class='node-time'>Oct 23, 2018 03:47:34 PM</span>
+						<span class='node-duration'>0h 0m 2s+204ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:47:36 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='50'>
+					<div class='collapsible-header'>
+						<div class='node-name'>When "TestAutomation@com.com" login olur</div>						
+						<span class='node-time'>Oct 23, 2018 03:47:36 PM</span>
+						<span class='node-duration'>0h 0m 1s+459ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:47:37 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='51'>
+					<div class='collapsible-header'>
+						<div class='node-name'>And Satilacak currency "British Pound" ve alinacak currency "Canadian Dollar" olan Amount to "Buy" secilen conversion islemi yapilir</div>						
+						<span class='node-time'>Oct 23, 2018 03:47:37 PM</span>
+						<span class='node-duration'>0h 0m 24s+184ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:48:02 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='52'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Then Conversion islemi basarili olmali</div>						
+						<span class='node-time'>Oct 23, 2018 03:48:02 PM</span>
+						<span class='node-duration'>0h 0m 0s+65ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:48:02 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+						</ul>
+				</li>
+				<li class='node level-2  pass' status='pass' test-id='53'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Scenario: Login into account with correct details</div>						
+						<span class='node-time'>Oct 23, 2018 03:48:02 PM</span>
+						<span class='node-duration'>0h 0m 31s+205ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<ul class='collapsible node-list' data-collapsible='accordion'>
+				<li class='node level-3 leaf pass' status='pass' test-id='54'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Given User navigates to settlego website</div>						
+						<span class='node-time'>Oct 23, 2018 03:48:03 PM</span>
+						<span class='node-duration'>0h 0m 3s+788ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:48:07 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='55'>
+					<div class='collapsible-header'>
+						<div class='node-name'>When "TestAutomation@com.com" login olur</div>						
+						<span class='node-time'>Oct 23, 2018 03:48:07 PM</span>
+						<span class='node-duration'>0h 0m 1s+571ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:48:08 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='56'>
+					<div class='collapsible-header'>
+						<div class='node-name'>And Satilacak currency "Euro" ve alinacak currency "Canadian Dollar" olan Amount to "Sell" secilen conversion islemi yapilir</div>						
+						<span class='node-time'>Oct 23, 2018 03:48:08 PM</span>
+						<span class='node-duration'>0h 0m 24s+512ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:48:33 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='57'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Then Conversion islemi basarili olmali</div>						
+						<span class='node-time'>Oct 23, 2018 03:48:33 PM</span>
+						<span class='node-duration'>0h 0m 0s+76ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:48:33 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+						</ul>
+				</li>
+				<li class='node level-2  pass' status='pass' test-id='58'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Scenario: Login into account with correct details</div>						
+						<span class='node-time'>Oct 23, 2018 03:48:33 PM</span>
+						<span class='node-duration'>0h 0m 33s+123ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<ul class='collapsible node-list' data-collapsible='accordion'>
+				<li class='node level-3 leaf pass' status='pass' test-id='59'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Given User navigates to settlego website</div>						
+						<span class='node-time'>Oct 23, 2018 03:48:35 PM</span>
+						<span class='node-duration'>0h 0m 3s+279ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:48:38 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='60'>
+					<div class='collapsible-header'>
+						<div class='node-name'>When "TestAutomation@com.com" login olur</div>						
+						<span class='node-time'>Oct 23, 2018 03:48:38 PM</span>
+						<span class='node-duration'>0h 0m 2s+123ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:48:40 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='61'>
+					<div class='collapsible-header'>
+						<div class='node-name'>And Satilacak currency "Euro" ve alinacak currency "Canadian Dollar" olan Amount to "Buy" secilen conversion islemi yapilir</div>						
+						<span class='node-time'>Oct 23, 2018 03:48:40 PM</span>
+						<span class='node-duration'>0h 0m 26s+283ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:49:06 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='62'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Then Conversion islemi basarili olmali</div>						
+						<span class='node-time'>Oct 23, 2018 03:49:06 PM</span>
+						<span class='node-duration'>0h 0m 0s+68ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:49:06 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+						</ul>
+				</li>
+				<li class='node level-2  pass' status='pass' test-id='63'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Scenario: Login into account with correct details</div>						
+						<span class='node-time'>Oct 23, 2018 03:49:06 PM</span>
+						<span class='node-duration'>0h 0m 29s+828ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<ul class='collapsible node-list' data-collapsible='accordion'>
+				<li class='node level-3 leaf pass' status='pass' test-id='64'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Given User navigates to settlego website</div>						
+						<span class='node-time'>Oct 23, 2018 03:49:08 PM</span>
+						<span class='node-duration'>0h 0m 2s+288ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:49:10 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='65'>
+					<div class='collapsible-header'>
+						<div class='node-name'>When "TestAutomationMnx@com.com" login olur</div>						
+						<span class='node-time'>Oct 23, 2018 03:49:10 PM</span>
+						<span class='node-duration'>0h 0m 1s+986ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:49:12 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='66'>
+					<div class='collapsible-header'>
+						<div class='node-name'>And Satilacak currency "British Pound" ve alinacak currency "Euro" olan Amount to "Sell" secilen conversion islemi yapilir</div>						
+						<span class='node-time'>Oct 23, 2018 03:49:12 PM</span>
+						<span class='node-duration'>0h 0m 24s+123ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:49:36 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='67'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Then Conversion islemi basarili olmali</div>						
+						<span class='node-time'>Oct 23, 2018 03:49:36 PM</span>
+						<span class='node-duration'>0h 0m 0s+67ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:49:36 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+						</ul>
+				</li>
+				<li class='node level-2  pass' status='pass' test-id='68'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Scenario: Login into account with correct details</div>						
+						<span class='node-time'>Oct 23, 2018 03:49:36 PM</span>
+						<span class='node-duration'>0h 0m 29s+727ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<ul class='collapsible node-list' data-collapsible='accordion'>
+				<li class='node level-3 leaf pass' status='pass' test-id='69'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Given User navigates to settlego website</div>						
+						<span class='node-time'>Oct 23, 2018 03:49:38 PM</span>
+						<span class='node-duration'>0h 0m 2s+282ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:49:40 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='70'>
+					<div class='collapsible-header'>
+						<div class='node-name'>When "TestAutomationMnx@com.com" login olur</div>						
+						<span class='node-time'>Oct 23, 2018 03:49:40 PM</span>
+						<span class='node-duration'>0h 0m 1s+265ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:49:41 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='71'>
+					<div class='collapsible-header'>
+						<div class='node-name'>And Satilacak currency "Euro" ve alinacak currency "British Pound" olan Amount to "Buy" secilen conversion islemi yapilir</div>						
+						<span class='node-time'>Oct 23, 2018 03:49:41 PM</span>
+						<span class='node-duration'>0h 0m 24s+820ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:50:06 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='72'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Then Conversion islemi basarili olmali</div>						
+						<span class='node-time'>Oct 23, 2018 03:50:06 PM</span>
+						<span class='node-duration'>0h 0m 0s+65ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:50:06 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+						</ul>
+				</li>
+				<li class='node level-2  pass' status='pass' test-id='73'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Scenario: Login into account with correct details</div>						
+						<span class='node-time'>Oct 23, 2018 03:50:06 PM</span>
+						<span class='node-duration'>0h 0m 29s+850ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<ul class='collapsible node-list' data-collapsible='accordion'>
+				<li class='node level-3 leaf pass' status='pass' test-id='74'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Given User navigates to settlego website</div>						
+						<span class='node-time'>Oct 23, 2018 03:50:07 PM</span>
+						<span class='node-duration'>0h 0m 2s+216ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:50:10 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='75'>
+					<div class='collapsible-header'>
+						<div class='node-name'>When "TestAutomationMnx@com.com" login olur</div>						
+						<span class='node-time'>Oct 23, 2018 03:50:10 PM</span>
+						<span class='node-duration'>0h 0m 2s+251ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:50:12 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='76'>
+					<div class='collapsible-header'>
+						<div class='node-name'>And Satilacak currency "Euro" ve alinacak currency "British Pound" olan Amount to "Sell" secilen conversion islemi yapilir</div>						
+						<span class='node-time'>Oct 23, 2018 03:50:12 PM</span>
+						<span class='node-duration'>0h 0m 24s+82ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:50:36 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='77'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Then Conversion islemi basarili olmali</div>						
+						<span class='node-time'>Oct 23, 2018 03:50:36 PM</span>
+						<span class='node-duration'>0h 0m 0s+63ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:50:36 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+						</ul>
+				</li>
+				<li class='node level-2  pass' status='pass' test-id='78'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Scenario: Login into account with correct details</div>						
+						<span class='node-time'>Oct 23, 2018 03:50:36 PM</span>
+						<span class='node-duration'>0h 0m 29s+881ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<ul class='collapsible node-list' data-collapsible='accordion'>
+				<li class='node level-3 leaf pass' status='pass' test-id='79'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Given User navigates to settlego website</div>						
+						<span class='node-time'>Oct 23, 2018 03:50:38 PM</span>
+						<span class='node-duration'>0h 0m 2s+184ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:50:40 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='80'>
+					<div class='collapsible-header'>
+						<div class='node-name'>When "TestAutomationMnx@com.com" login olur</div>						
+						<span class='node-time'>Oct 23, 2018 03:50:40 PM</span>
+						<span class='node-duration'>0h 0m 2s+534ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:50:42 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='81'>
+					<div class='collapsible-header'>
+						<div class='node-name'>And Satilacak currency "British Pound" ve alinacak currency "Euro" olan Amount to "Buy" secilen conversion islemi yapilir</div>						
+						<span class='node-time'>Oct 23, 2018 03:50:42 PM</span>
+						<span class='node-duration'>0h 0m 23s+814ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:51:06 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='82'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Then Conversion islemi basarili olmali</div>						
+						<span class='node-time'>Oct 23, 2018 03:51:06 PM</span>
+						<span class='node-duration'>0h 0m 0s+64ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:51:06 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+						</ul>
+				</li>
+				<li class='node level-2  pass' status='pass' test-id='83'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Scenario: Login into account with correct details</div>						
+						<span class='node-time'>Oct 23, 2018 03:51:06 PM</span>
+						<span class='node-duration'>0h 0m 29s+441ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<ul class='collapsible node-list' data-collapsible='accordion'>
+				<li class='node level-3 leaf pass' status='pass' test-id='84'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Given User navigates to settlego website</div>						
+						<span class='node-time'>Oct 23, 2018 03:51:08 PM</span>
+						<span class='node-duration'>0h 0m 2s+397ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:51:10 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='85'>
+					<div class='collapsible-header'>
+						<div class='node-name'>When "TestAutomationMnx@com.com" login olur</div>						
+						<span class='node-time'>Oct 23, 2018 03:51:10 PM</span>
+						<span class='node-duration'>0h 0m 1s+333ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:51:11 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='86'>
+					<div class='collapsible-header'>
+						<div class='node-name'>And Satilacak currency "British Pound" ve alinacak currency "United States Dollar" olan Amount to "Sell" secilen conversion islemi yapilir</div>						
+						<span class='node-time'>Oct 23, 2018 03:51:11 PM</span>
+						<span class='node-duration'>0h 0m 24s+253ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:51:36 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='87'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Then Conversion islemi basarili olmali</div>						
+						<span class='node-time'>Oct 23, 2018 03:51:36 PM</span>
+						<span class='node-duration'>0h 0m 0s+64ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:51:36 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+						</ul>
+				</li>
+				<li class='node level-2  pass' status='pass' test-id='88'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Scenario: Login into account with correct details</div>						
+						<span class='node-time'>Oct 23, 2018 03:51:36 PM</span>
+						<span class='node-duration'>0h 0m 29s+691ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<ul class='collapsible node-list' data-collapsible='accordion'>
+				<li class='node level-3 leaf pass' status='pass' test-id='89'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Given User navigates to settlego website</div>						
+						<span class='node-time'>Oct 23, 2018 03:51:37 PM</span>
+						<span class='node-duration'>0h 0m 2s+269ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:51:39 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='90'>
+					<div class='collapsible-header'>
+						<div class='node-name'>When "TestAutomationMnx@com.com" login olur</div>						
+						<span class='node-time'>Oct 23, 2018 03:51:39 PM</span>
+						<span class='node-duration'>0h 0m 1s+424ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:51:41 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='91'>
+					<div class='collapsible-header'>
+						<div class='node-name'>And Satilacak currency "British Pound" ve alinacak currency "United States Dollar" olan Amount to "Buy" secilen conversion islemi yapilir</div>						
+						<span class='node-time'>Oct 23, 2018 03:51:41 PM</span>
+						<span class='node-duration'>0h 0m 24s+604ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:52:05 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='92'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Then Conversion islemi basarili olmali</div>						
+						<span class='node-time'>Oct 23, 2018 03:52:05 PM</span>
+						<span class='node-duration'>0h 0m 0s+86ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:52:06 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+						</ul>
+				</li>
+				<li class='node level-2  pass' status='pass' test-id='93'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Scenario: Login into account with correct details</div>						
+						<span class='node-time'>Oct 23, 2018 03:52:06 PM</span>
+						<span class='node-duration'>0h 0m 29s+642ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<ul class='collapsible node-list' data-collapsible='accordion'>
+				<li class='node level-3 leaf pass' status='pass' test-id='94'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Given User navigates to settlego website</div>						
+						<span class='node-time'>Oct 23, 2018 03:52:07 PM</span>
+						<span class='node-duration'>0h 0m 2s+165ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:52:09 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='95'>
+					<div class='collapsible-header'>
+						<div class='node-name'>When "TestAutomationMnx@com.com" login olur</div>						
+						<span class='node-time'>Oct 23, 2018 03:52:09 PM</span>
+						<span class='node-duration'>0h 0m 1s+900ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:52:11 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='96'>
+					<div class='collapsible-header'>
+						<div class='node-name'>And Satilacak currency "British Pound" ve alinacak currency "Hong Kong Dollar" olan Amount to "Sell" secilen conversion islemi yapilir</div>						
+						<span class='node-time'>Oct 23, 2018 03:52:11 PM</span>
+						<span class='node-duration'>0h 0m 24s+239ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:52:35 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='97'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Then Conversion islemi basarili olmali</div>						
+						<span class='node-time'>Oct 23, 2018 03:52:35 PM</span>
+						<span class='node-duration'>0h 0m 0s+66ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:52:35 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+						</ul>
+				</li>
+				<li class='node level-2  pass' status='pass' test-id='98'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Scenario: Login into account with correct details</div>						
+						<span class='node-time'>Oct 23, 2018 03:52:35 PM</span>
+						<span class='node-duration'>0h 0m 30s+379ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<ul class='collapsible node-list' data-collapsible='accordion'>
+				<li class='node level-3 leaf pass' status='pass' test-id='99'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Given User navigates to settlego website</div>						
+						<span class='node-time'>Oct 23, 2018 03:52:37 PM</span>
+						<span class='node-duration'>0h 0m 2s+208ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:52:39 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='100'>
+					<div class='collapsible-header'>
+						<div class='node-name'>When "TestAutomationMnx@com.com" login olur</div>						
+						<span class='node-time'>Oct 23, 2018 03:52:39 PM</span>
+						<span class='node-duration'>0h 0m 2s+177ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:52:41 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='101'>
+					<div class='collapsible-header'>
+						<div class='node-name'>And Satilacak currency "British Pound" ve alinacak currency "Hong Kong Dollar" olan Amount to "Buy" secilen conversion islemi yapilir</div>						
+						<span class='node-time'>Oct 23, 2018 03:52:41 PM</span>
+						<span class='node-duration'>0h 0m 24s+547ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:53:06 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='102'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Then Conversion islemi basarili olmali</div>						
+						<span class='node-time'>Oct 23, 2018 03:53:06 PM</span>
+						<span class='node-duration'>0h 0m 0s+65ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:53:06 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+						</ul>
+				</li>
+				<li class='node level-2  pass' status='pass' test-id='103'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Scenario: Login into account with correct details</div>						
+						<span class='node-time'>Oct 23, 2018 03:53:06 PM</span>
+						<span class='node-duration'>0h 0m 30s+253ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<ul class='collapsible node-list' data-collapsible='accordion'>
+				<li class='node level-3 leaf pass' status='pass' test-id='104'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Given User navigates to settlego website</div>						
+						<span class='node-time'>Oct 23, 2018 03:53:07 PM</span>
+						<span class='node-duration'>0h 0m 2s+293ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:53:09 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='105'>
+					<div class='collapsible-header'>
+						<div class='node-name'>When "TestAutomationMnx@com.com" login olur</div>						
+						<span class='node-time'>Oct 23, 2018 03:53:09 PM</span>
+						<span class='node-duration'>0h 0m 1s+415ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:53:11 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='106'>
+					<div class='collapsible-header'>
+						<div class='node-name'>And Satilacak currency "British Pound" ve alinacak currency "Canadian Dollar" olan Amount to "Sell" secilen conversion islemi yapilir</div>						
+						<span class='node-time'>Oct 23, 2018 03:53:11 PM</span>
+						<span class='node-duration'>0h 0m 25s+507ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:53:36 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='107'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Then Conversion islemi basarili olmali</div>						
+						<span class='node-time'>Oct 23, 2018 03:53:36 PM</span>
+						<span class='node-duration'>0h 0m 0s+65ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:53:36 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+						</ul>
+				</li>
+				<li class='node level-2  pass' status='pass' test-id='108'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Scenario: Login into account with correct details</div>						
+						<span class='node-time'>Oct 23, 2018 03:53:36 PM</span>
+						<span class='node-duration'>0h 0m 29s+187ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<ul class='collapsible node-list' data-collapsible='accordion'>
+				<li class='node level-3 leaf pass' status='pass' test-id='109'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Given User navigates to settlego website</div>						
+						<span class='node-time'>Oct 23, 2018 03:53:37 PM</span>
+						<span class='node-duration'>0h 0m 2s+134ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:53:39 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='110'>
+					<div class='collapsible-header'>
+						<div class='node-name'>When "TestAutomationMnx@com.com" login olur</div>						
+						<span class='node-time'>Oct 23, 2018 03:53:39 PM</span>
+						<span class='node-duration'>0h 0m 1s+293ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:53:41 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='111'>
+					<div class='collapsible-header'>
+						<div class='node-name'>And Satilacak currency "British Pound" ve alinacak currency "Canadian Dollar" olan Amount to "Buy" secilen conversion islemi yapilir</div>						
+						<span class='node-time'>Oct 23, 2018 03:53:41 PM</span>
+						<span class='node-duration'>0h 0m 24s+696ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:54:05 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='112'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Then Conversion islemi basarili olmali</div>						
+						<span class='node-time'>Oct 23, 2018 03:54:05 PM</span>
+						<span class='node-duration'>0h 0m 0s+65ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:54:06 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+						</ul>
+				</li>
+				<li class='node level-2  pass' status='pass' test-id='113'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Scenario: Login into account with correct details</div>						
+						<span class='node-time'>Oct 23, 2018 03:54:06 PM</span>
+						<span class='node-duration'>0h 0m 31s+476ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<ul class='collapsible node-list' data-collapsible='accordion'>
+				<li class='node level-3 leaf pass' status='pass' test-id='114'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Given User navigates to settlego website</div>						
+						<span class='node-time'>Oct 23, 2018 03:54:07 PM</span>
+						<span class='node-duration'>0h 0m 3s+855ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:54:10 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='115'>
+					<div class='collapsible-header'>
+						<div class='node-name'>When "TestAutomationMnx@com.com" login olur</div>						
+						<span class='node-time'>Oct 23, 2018 03:54:10 PM</span>
+						<span class='node-duration'>0h 0m 1s+633ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:54:12 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='116'>
+					<div class='collapsible-header'>
+						<div class='node-name'>And Satilacak currency "Euro" ve alinacak currency "Canadian Dollar" olan Amount to "Sell" secilen conversion islemi yapilir</div>						
+						<span class='node-time'>Oct 23, 2018 03:54:12 PM</span>
+						<span class='node-duration'>0h 0m 24s+975ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:54:37 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='117'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Then Conversion islemi basarili olmali</div>						
+						<span class='node-time'>Oct 23, 2018 03:54:37 PM</span>
+						<span class='node-duration'>0h 0m 0s+66ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:54:37 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+						</ul>
+				</li>
+				<li class='node level-2  pass' status='pass' test-id='118'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Scenario: Login into account with correct details</div>						
+						<span class='node-time'>Oct 23, 2018 03:54:37 PM</span>
+						<span class='node-duration'>0h 0m 30s+121ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<ul class='collapsible node-list' data-collapsible='accordion'>
+				<li class='node level-3 leaf pass' status='pass' test-id='119'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Given User navigates to settlego website</div>						
+						<span class='node-time'>Oct 23, 2018 03:54:38 PM</span>
+						<span class='node-duration'>0h 0m 2s+925ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:54:41 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='120'>
+					<div class='collapsible-header'>
+						<div class='node-name'>When "TestAutomationMnx@com.com" login olur</div>						
+						<span class='node-time'>Oct 23, 2018 03:54:41 PM</span>
+						<span class='node-duration'>0h 0m 1s+828ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:54:43 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='121'>
+					<div class='collapsible-header'>
+						<div class='node-name'>And Satilacak currency "Euro" ve alinacak currency "Canadian Dollar" olan Amount to "Buy" secilen conversion islemi yapilir</div>						
+						<span class='node-time'>Oct 23, 2018 03:54:43 PM</span>
+						<span class='node-duration'>0h 0m 24s+302ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:55:07 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+				<li class='node level-3 leaf pass' status='pass' test-id='122'>
+					<div class='collapsible-header'>
+						<div class='node-name'>Then Conversion islemi basarili olmali</div>						
+						<span class='node-time'>Oct 23, 2018 03:55:07 PM</span>
+						<span class='node-duration'>0h 0m 0s+65ms</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+						<div class='collapsible-body'>
+								<div class='node-steps'>
+									<table class='bordered table-results'>
+										<thead>
+											<tr>
+												<th>Status</th>
+												<th>Timestamp</th>
+												<th>Details</th>
+											</tr>
+										</thead>
+										<tbody>
+												<tr class='log' status='pass'>
+													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
+													<td class='timestamp'>3:55:07 PM</td>
+													<td class='step-details'>passed</td>
+												</tr>
+										</tbody>
+									</table>
+								</div>
+						</div>
+				</li>
+						</ul>
+				</li>
+						</ul>
+				</li>
+	</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- subview left -->
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='test-name'></h5>
+
+			<div id='step-filters' class="right">
+				<span class="blue-text" status="info" alt="info" title="info"><i class="material-icons">info_outline</i></span>
+				<span class="green-text" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></span>
+				<span class="red-text" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></span>
+				<span class="red-text text-darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></span>
+				<span class="pink-text text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></span>
+				<span class="orange-text" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></span>
+				<span class="teal-text" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></span>
+				<span status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></span>
+			</div>
+		</div>
+	</div>
+	<!-- subview right -->
+
+</div>
+<!-- test view -->
+<div id='category-view' class='view hide'>
+
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+					<i class='material-icons'>search</i> Search
+				</a>
+				
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+				
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+
+	<div class='subview-left left'>
+		
+		<div class='view-summary'>
+			<h5>Categories</h3>
+			<ul id='category-collection' class='category-collection'>
+				
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@halo20</span>
+						<span class='category-status right'>
+							<span class='label pass'>23</span>
+							<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 23</span>
+							<span class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Oct 23, 2018 03:40:09 PM</td>
+										<td class='linked' test-id='3'>Conversion Yaratma - FMX.Scenario Outline: Login into account with correct details.Scenario: Login into account with correct details</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 23, 2018 03:40:43 PM</td>
+										<td class='linked' test-id='8'>Conversion Yaratma - FMX.Scenario Outline: Login into account with correct details.Scenario: Login into account with correct details</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 23, 2018 03:41:16 PM</td>
+										<td class='linked' test-id='13'>Conversion Yaratma - FMX.Scenario Outline: Login into account with correct details.Scenario: Login into account with correct details</td>
+										<td><span class='test-status fail'>fail</span></td>
+									</tr>
+									<tr>
+										<td>Oct 23, 2018 03:44:30 PM</td>
+										<td class='linked' test-id='18'>Conversion Yaratma - FMX.Scenario Outline: Login into account with correct details.Scenario: Login into account with correct details</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 23, 2018 03:45:03 PM</td>
+										<td class='linked' test-id='23'>Conversion Yaratma - FMX.Scenario Outline: Login into account with correct details.Scenario: Login into account with correct details</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 23, 2018 03:45:34 PM</td>
+										<td class='linked' test-id='28'>Conversion Yaratma - FMX.Scenario Outline: Login into account with correct details.Scenario: Login into account with correct details</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 23, 2018 03:46:04 PM</td>
+										<td class='linked' test-id='33'>Conversion Yaratma - FMX.Scenario Outline: Login into account with correct details.Scenario: Login into account with correct details</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 23, 2018 03:46:34 PM</td>
+										<td class='linked' test-id='38'>Conversion Yaratma - FMX.Scenario Outline: Login into account with correct details.Scenario: Login into account with correct details</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 23, 2018 03:47:03 PM</td>
+										<td class='linked' test-id='43'>Conversion Yaratma - FMX.Scenario Outline: Login into account with correct details.Scenario: Login into account with correct details</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 23, 2018 03:47:32 PM</td>
+										<td class='linked' test-id='48'>Conversion Yaratma - FMX.Scenario Outline: Login into account with correct details.Scenario: Login into account with correct details</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 23, 2018 03:48:02 PM</td>
+										<td class='linked' test-id='53'>Conversion Yaratma - FMX.Scenario Outline: Login into account with correct details.Scenario: Login into account with correct details</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 23, 2018 03:48:33 PM</td>
+										<td class='linked' test-id='58'>Conversion Yaratma - FMX.Scenario Outline: Login into account with correct details.Scenario: Login into account with correct details</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 23, 2018 03:49:06 PM</td>
+										<td class='linked' test-id='63'>Conversion Yaratma - FMX.Scenario Outline: Login into account with correct details.Scenario: Login into account with correct details</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 23, 2018 03:49:36 PM</td>
+										<td class='linked' test-id='68'>Conversion Yaratma - FMX.Scenario Outline: Login into account with correct details.Scenario: Login into account with correct details</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 23, 2018 03:50:06 PM</td>
+										<td class='linked' test-id='73'>Conversion Yaratma - FMX.Scenario Outline: Login into account with correct details.Scenario: Login into account with correct details</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 23, 2018 03:50:36 PM</td>
+										<td class='linked' test-id='78'>Conversion Yaratma - FMX.Scenario Outline: Login into account with correct details.Scenario: Login into account with correct details</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 23, 2018 03:51:06 PM</td>
+										<td class='linked' test-id='83'>Conversion Yaratma - FMX.Scenario Outline: Login into account with correct details.Scenario: Login into account with correct details</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 23, 2018 03:51:36 PM</td>
+										<td class='linked' test-id='88'>Conversion Yaratma - FMX.Scenario Outline: Login into account with correct details.Scenario: Login into account with correct details</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 23, 2018 03:52:06 PM</td>
+										<td class='linked' test-id='93'>Conversion Yaratma - FMX.Scenario Outline: Login into account with correct details.Scenario: Login into account with correct details</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 23, 2018 03:52:35 PM</td>
+										<td class='linked' test-id='98'>Conversion Yaratma - FMX.Scenario Outline: Login into account with correct details.Scenario: Login into account with correct details</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 23, 2018 03:53:06 PM</td>
+										<td class='linked' test-id='103'>Conversion Yaratma - FMX.Scenario Outline: Login into account with correct details.Scenario: Login into account with correct details</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 23, 2018 03:53:36 PM</td>
+										<td class='linked' test-id='108'>Conversion Yaratma - FMX.Scenario Outline: Login into account with correct details.Scenario: Login into account with correct details</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 23, 2018 03:54:06 PM</td>
+										<td class='linked' test-id='113'>Conversion Yaratma - FMX.Scenario Outline: Login into account with correct details.Scenario: Login into account with correct details</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 23, 2018 03:54:37 PM</td>
+										<td class='linked' test-id='118'>Conversion Yaratma - FMX.Scenario Outline: Login into account with correct details.Scenario: Login into account with correct details</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='category-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- category view -->
+<div id='exception-view' class='view hide'>
+
+    <section id='controls'>
+        <div class='controls grey lighten-4'>
+            <!-- search -->
+            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
+                <a href="#" class='search-div'>
+                    <i class='material-icons'>search</i> Search
+                </a>
+
+                <div class='input-field left hide'>
+                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+                </div>
+
+            </div>
+            <!-- search -->
+        </div>
+    </section>
+
+    <div class='subview-left left'>
+
+        <div class='view-summary'>
+            <h5>Exceptions</h3>
+                <ul id='exception-collection' class='exception-collection'>
+
+                        <li class='exception displayed active'>
+                            <div class='exception-heading'>
+                                <span class='exception-name'>org.openqa.selenium.WebDriverException</span>
+                                <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+                            </div>
+                            <div class='exception-content hide'>
+                                <div class='exception-tests'>
+                                    <table class='bordered table-results'>
+                                        <thead>
+                                        <tr>
+                                            <th>Timestamp</th>
+                                            <th>TestName</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                                    <tr>
+                                                        <td>Oct 23, 2018 03:41:32 PM</td>
+                                                        <td class='linked' test-id='16'>Conversion Yaratma - FMX.Scenario Outline: Login into account with correct details.Scenario: Login into account with correct details.And Satilacak currency "Euro" ve alinacak currency "British Pound" olan Amount to "Sell" secilen conversion islemi yapilir</td>
+                                                        <td><pre><textarea>org.openqa.selenium.WebDriverException: unknown error: Element <input type="submit" class="btn-style reverted pull-right full-mobile" value="Get a Quote" data-reactid=".0.3.0.0.1.0.1.0.0.6.1"> is not clickable at point (616, 753). Other element would receive the click: <div class="loader-overlay" data-reactid=".0.4" style="display: block; opacity: 0.666873;">...</div>
+  (Session info: chrome=69.0.3497.100)
+  (Driver info: chromedriver=2.41.578706 (5f725d1b4f0a4acbf5259df887244095596231db),platform=Mac OS X 10.12.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 48 milliseconds
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'Berk-MacBook-Pro.local', ip: '192.168.34.126', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=MAC, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:57688}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.41.578706 (5f725d1b4f0a4acbf5259df887244095596231db), userDataDir=/var/folders/cl/dp0_2m3s2rx99p5p_z0v_y280000gn/T/.org.chromium.Chromium.0c85wR}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, version=69.0.3497.100, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c61cb8ce3a1d1dc611548a29147a758f
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:671)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+	at pageobject.ConversionPage.ConversionPage(ConversionPage.java:29)
+	at steps.ConversionSteps.satilacak_currency_ve_alinacak_currency_olan_Amount_to_secilen_conversion_islemi_yapilir(ConversionSteps.java:19)
+	at ✽.And Satilacak currency "Euro" ve alinacak currency "British Pound" olan Amount to "Sell" secilen conversion islemi yapilir(Conversion.feature:9)
+</textarea></pre></td>
+                                                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                </ul>
+        </div>
+    </div>
+
+    <div class='subview-right left'>
+        <div class='view-summary'>
+            <h5 class='exception-name'></h5>
+        </div>
+    </div>
+</div>
+<!-- exception view -->
+<div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Tests
+					<div class='panel-lead'>96</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>96</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>Oct 23, 2018 03:40:09 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>Oct 23, 2018 03:55:08 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>898,982ms</div>
+				</div>
+			</div>
+			<div class='col s4'>
+				<div class='card-panel'>
+					<span class='right label cyan white-text'>Categories</span><p>&nbsp;</p>
+					
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Passed</th>
+							<th>Failed</th>
+							<th>Others</th>
+						</tr>
+						<tr>
+							<td>@halo20</td>
+							<td>23</td>
+							<td>1</td>
+							<td>0</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dashboard view -->
+<!-- testrunner-logs view -->
+		</div>
+		<!-- container -->
+
+		<script>
+			var statusGroup = {
+				passParent: 94,
+				failParent: 1,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 1,
+				exceptionsParent: 2,
+				
+				passChild: 94,
+				failChild: 1,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 0,
+				skipChild: 1,
+				infoChild: 0,
+				exceptionsChild: 2,
+				
+				passGrandChild: 0,
+				failGrandChild: 0,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 0,
+				infoGrandChild: 0,
+				exceptionsGrandChild: 0,
+			};
+		</script>
+		
+			<script src='https://cdn.rawgit.com/anshooarora/extentreports-java/29d2d3ec024c953e6341cb3e19e31b1035a8f556/dist/js/extent.js' type='text/javascript'></script>
+		
+		
+	</body>
+	
+</html>
