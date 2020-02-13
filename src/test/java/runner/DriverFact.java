@@ -31,19 +31,17 @@ public class DriverFact {
         TimeUnit.SECONDS.sleep(time);
     }
 
-    public WebDriver launchChrome() {
+    public static WebDriver launchChrome() {
         System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver");
         driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.switchTo().window(driver.getWindowHandle());
+ //       driver.manage().window().maximize();
+        //driver.switchTo().window(driver.getWindowHandle());
         return driver;
-
-//        WebDriverManager.chromedriver().setup();
+        //WebDriverManager.chromedriver().setup();
 //        driver = new ChromeDriver();
-//        driver.switchTo().window(driver.getWindowHandle());
+//    driver.switchTo().window(driver.getWindowHandle());
         // return driver;
     }
-
     public void tearDown(Scenario scenario) {
         try {
             if (driver != null && scenario.isFailed()) {
